@@ -1,6 +1,7 @@
 all:
 	./build_native.sh
-	ant -Dsdk.dir=../../../../../../android-sdks debug
+	ant -Dsdk.dir=$(ADK_ROOT) debug
+
 
 run:
 	adb -d uninstall org.cocos2dx.hellocpp
