@@ -1,4 +1,4 @@
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := $(call my-dir)/../..
 
 include $(CLEAR_VARS)
 
@@ -78,19 +78,19 @@ platform/CCSAXParser.cpp \
 platform/CCThread.cpp \
 platform/platform.cpp \
 platform/CCEGLViewProtocol.cpp \
-platform/android/CCEGLView.cpp \
-platform/android/CCAccelerometer.cpp \
-platform/android/CCApplication.cpp \
-platform/android/CCCommon.cpp \
-platform/android/CCFileUtils.cpp \
-platform/android/CCImage.cpp \
-platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp \
-platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp \
-platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp \
-platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp \
-platform/android/jni/JniHelper.cpp \
-platform/android/jni/IMEJni.cpp \
-platform/android/jni/TouchesJni.cpp \
+platform/ouya/CCEGLView.cpp \
+platform/ouya/CCAccelerometer.cpp \
+platform/ouya/CCApplication.cpp \
+platform/ouya/CCCommon.cpp \
+platform/ouya/CCFileUtils.cpp \
+platform/ouya/CCImage.cpp \
+platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp \
+platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp \
+platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp \
+platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp \
+platform/ouya/jni/JniHelper.cpp \
+platform/ouya/jni/IMEJni.cpp \
+platform/ouya/jni/TouchesJni.cpp \
 script_support/CCScriptSupport.cpp \
 shaders/ccShaders.cpp \
 shaders/CCGLProgram.cpp \
