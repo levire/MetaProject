@@ -88,6 +88,7 @@ platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp \
 platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp \
 platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp \
 platform/ouya/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp \
+platform/ouya/jni/Java_com_levire_ouyabind_Controller.cpp \
 platform/ouya/jni/JniHelper.cpp \
 platform/ouya/jni/IMEJni.cpp \
 platform/ouya/jni/TouchesJni.cpp \
