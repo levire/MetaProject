@@ -13,3 +13,8 @@ MetaProject/projects/HelloCpp/proj.android/obj
 MetaProject/projects/HelloCpp/proj.android/libs/armeabi
 MetaProject/projects/HelloCpp/proj.ouya/libs/armeabi
 MetaProject/project/proj.ios/LevireTemplate.xcodeproj/xcuserdata
+MetaProject/project/proj.ouya/assets
+MetaProject/project/proj.ouya/bin
+MetaProject/project/proj.ouya/gen
+MetaProject/project/proj.ouya/libs/armeabi
+MetaProject/project/proj.ouya/obj
