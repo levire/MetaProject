@@ -44,9 +44,29 @@ extern "C"
                                                                             deviceId);
             
 			methodInfo.env->DeleteLocalRef(methodInfo.classID);
-            return ouyaController;
+            return methodInfo.env->NewGlobalRef(ouyaController);
 		}
         return NULL;
+    }
+    
+    bool isOuyaButtonPressed(OuyaButton button, jobject ouyaController)
+    {
+        JniMethodInfo methodInfo;
+        
+        bool isMethodAvailable = JniHelper::getMethodInfo(methodInfo,
+                                                          "tv/ouya/console/api/OuyaController",
+                                                          "getButton",
+                                                          "(I)Z");
+        
+        if (isMethodAvailable)
+        {
+            bool buttonPressed = methodInfo.env->CallBooleanMethod(ouyaController,
+                                                                  methodInfo.methodID,
+                                                                  button);
+            methodInfo.env->DeleteLocalRef(methodInfo.classID);
+            return buttonPressed;
+        }
+        return false;
     }
     
     

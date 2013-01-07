@@ -1,7 +1,7 @@
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
 #include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
-#include <jni.h>
+
 
 USING_NS_CC;
 
@@ -78,15 +78,26 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
     
+    this->scheduleUpdate();
+    
     CCLOG("Initialized scene");
     jobject ouyaController = getOuyaControllerByDeviceId(3);
     if (ouyaController != NULL)
     {
         CCLOG("Received Found one Controller");
+        
+        this->ouyaController = ouyaController;
     }
     return true;
 }
 
+void HelloWorld::update(float fDelta)
+{
+    if (isOuyaButtonPressed(BUTTON_A,this->ouyaController))
+    {
+        CCLOG("Pressed A");
+    }
+}
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
