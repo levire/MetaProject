@@ -1,5 +1,8 @@
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
+#include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
+#include <jni.h>
+
 USING_NS_CC;
 
 #define COCOS_DEBUG 1
@@ -76,7 +79,11 @@ bool HelloWorld::init()
     this->addChild(pSprite, 0);
     
     CCLOG("Initialized scene");
-    
+    jobject ouyaController = getOuyaControllerByPlayer(1);
+    if (ouyaController != NULL)
+    {
+        CCLOG("Found one Controller");
+    }
     return true;
 }
 

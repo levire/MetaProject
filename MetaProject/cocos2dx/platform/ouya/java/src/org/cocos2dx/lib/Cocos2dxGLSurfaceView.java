@@ -23,6 +23,8 @@ THE SOFTWARE.
  ****************************************************************************/
 package org.cocos2dx.lib;
 
+import com.levire.ouyabind.OuyaBindController;
+
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.os.Handler;
@@ -278,6 +280,7 @@ public class Cocos2dxGLSurfaceView extends GLSurfaceView {
 
 	@Override
 	public boolean onKeyDown(final int pKeyCode, final KeyEvent pKeyEvent) {
+		OuyaBindController.onKeyDown(pKeyCode, pKeyEvent);
 		switch (pKeyCode) {
 			case KeyEvent.KEYCODE_BACK:
 			case KeyEvent.KEYCODE_MENU:
