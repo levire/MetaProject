@@ -43,6 +43,11 @@ CCOuyaController::CCOuyaController(jobject jniLinkToOuyaController, int deviceId
 
 }
 
+CCOuyaController::~CCOuyaController() 
+{
+	deleteOuyaControllerJNIRef(jniLinkToOuyaController);
+}
+
 void CCOuyaController::onKeyDown(int keyCode, int deviceId)
 {
 	for (Listeners::iterator it = CCOuyaController::listeners.begin();
@@ -99,6 +104,17 @@ bool CCOuyaController::registered(IOuyaControllerListener* listener)
 bool CCOuyaController::isButtonPressed(OuyaButton button)
 {
 	return isOuyaButtonPressed(button, this->jniLinkToOuyaController);
+}
+
+void CCOuyaController::freeControllerCache()
+{
+	for (Listeners::iterator it = CCOuyaController::listeners.begin();
+		it != CCOuyaController::listeners.end();
+		it++)
+	{
+		delete (*it);
+	}
+	CCOuyaController::listeners.clear();
 }
 
 NS_CC_END

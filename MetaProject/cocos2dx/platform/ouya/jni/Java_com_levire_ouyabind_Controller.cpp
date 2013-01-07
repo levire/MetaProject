@@ -88,7 +88,7 @@ extern "C"
         ;
     }
     
-    bool deleteGlobalJNIRef(jobject globalRef)
+    bool deleteOuyaControllerJNIRef(jobject globalRef)
     {
         JNIEnv *env;
         if (JniHelper::getJavaVM()->GetEnv((void**)&env, JNI_VERSION_1_4) != JNI_OK)

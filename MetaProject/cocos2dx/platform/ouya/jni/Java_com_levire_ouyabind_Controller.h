@@ -37,7 +37,7 @@ extern "C"
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeGenericMotionEvent(JNIEnv* env, jobject thiz, jint deviceId);
     
-    bool deleteGlobalJNIRef(jobject globalRef);
+    bool deleteOuyaControllerJNIRef(jobject globalRef);
 }
 
 #endif

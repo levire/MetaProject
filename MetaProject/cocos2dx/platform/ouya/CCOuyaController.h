@@ -29,7 +29,12 @@ public:
 	static void removeListener(IOuyaControllerListener* listener);
 	static bool registered(IOuyaControllerListener* listener);
 
+	static void freeControllerCache();
+
 	bool isButtonPressed(OuyaButton button);
+
+	virtual ~CCOuyaController();
+
 private:
 
 	CCOuyaController(jobject jniLinkToOuyaController, int deviceId);
