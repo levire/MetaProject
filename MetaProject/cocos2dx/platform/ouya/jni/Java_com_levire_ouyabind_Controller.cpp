@@ -50,7 +50,7 @@ extern "C"
         return NULL;
     }
     
-    bool isOuyaButtonPressed(OuyaButton button, jobject ouyaController)
+    bool isOuyaButtonPressed(OuyaButton button, jobject ouyaControllerGlobalRef)
     {
         JniMethodInfo methodInfo;
         
@@ -61,7 +61,7 @@ extern "C"
         
         if (isMethodAvailable)
         {
-            bool buttonPressed = methodInfo.env->CallBooleanMethod(ouyaController,
+            bool buttonPressed = methodInfo.env->CallBooleanMethod(ouyaControllerGlobalRef,
                                                                   methodInfo.methodID,
                                                                   button);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
@@ -86,5 +86,17 @@ extern "C"
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeGenericMotionEvent(JNIEnv* env, jobject thiz, jint deviceId)
     {
         ;
+    }
+    
+    bool deleteGlobalJNIRef(jobject globalRef)
+    {
+        JNIEnv *env;
+        if (JniHelper::getJavaVM()->GetEnv((void**)&env, JNI_VERSION_1_4) != JNI_OK)
+            return false;
+        else
+        {
+            env->DeleteGlobalRef(globalRef);
+            return true;
+        }
     }
 }
