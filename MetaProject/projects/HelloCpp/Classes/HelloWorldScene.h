@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "platform/ouya/CCOuyaController.h"
+#include <jni.h>
 
 class HelloWorld : public cocos2d::CCLayer, public cocos2d::IOuyaControllerListener
 {
@@ -15,6 +16,8 @@ public:
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    void update(float fDelta);
     
     // implement the "static node()" method manually
     CREATE_FUNC(HelloWorld);
