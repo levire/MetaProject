@@ -1,9 +1,8 @@
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
 #include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
-
 #include "platform/ouya/CCOuyaController.h"
-
+#include <jni.h>
 
 USING_NS_CC;
 
@@ -84,15 +83,8 @@ bool HelloWorld::init()
     
     CCLOG("Initialized scene");
 
-    CCOuyaController* ouyaController = CCOuyaController::controllerByDeviceId(2);
-    
-    jobject ref = getOuyaControllerByDeviceId(2);
-    deleteGlobalJNIRef(ref);
-    
-    if (ouyaController != NULL)
-    {
-        CCLOG("Received Found one Controller");
-    }
+    CCOuyaController::addListener(this);
+
     return true;
 }
 
@@ -111,4 +103,14 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+}
+
+void HelloWorld::onControllerKeyDown(int keyCode, cocos2d::CCOuyaController* controller)
+{
+    CCLOG("onControllerKeyDown(%d, %d)", keyCode, controller);
+}
+
+void HelloWorld::onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* controller)
+{
+    CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
 }
