@@ -11,7 +11,6 @@
 		1514DA40163004980095A81C /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3D163004980095A81C /* ipadhd */; };
 		1514DA41163004980095A81C /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3E163004980095A81C /* iphone */; };
 		41BC70AD15BF7CCE006A0A6C /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70AC15BF7CCE006A0A6C /* Icon.icns */; };
-		41BC70B715BF7E14006A0A6C /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C5C15BF74E5005E6F29 /* libcocos2dx.a */; };
 		41CD6C6515BF7574005E6F29 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6315BF7574005E6F29 /* AppController.mm */; };
 		41CD6C6615BF7574005E6F29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6415BF7574005E6F29 /* main.m */; };
 		41CD6C6E15BF7673005E6F29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41CD6C6815BF7673005E6F29 /* InfoPlist.strings */; };
@@ -28,21 +27,15 @@
 		41CD6C9615BF7793005E6F29 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8E15BF7793005E6F29 /* QuartzCore.framework */; };
 		41CD6C9915BF77CE005E6F29 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C9715BF77CE005E6F29 /* libxml2.dylib */; };
 		41CD6C9A15BF77CE005E6F29 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C9815BF77CE005E6F29 /* libz.dylib */; };
+		797FBD15169B74F200B84994 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 797FBD14169B74E200B84994 /* libcocos2dx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41CD6C5B15BF74E5005E6F29 /* PBXContainerItemProxy */ = {
+		797FBD13169B74E200B84994 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 41CD6C5415BF74E5005E6F29 /* cocos2dx.xcodeproj */;
+			containerPortal = 797FBD0C169B74E100B84994 /* cocos2dx.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
-			remoteInfo = cocos2dx;
-		};
-		41EFC1B915BF79BD0083EA95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41CD6C5415BF74E5005E6F29 /* cocos2dx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
 			remoteInfo = cocos2dx;
 		};
 /* End PBXContainerItemProxy section */
@@ -53,15 +46,14 @@
 		1514DA3E163004980095A81C /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iphone; path = ../Resources/iphone; sourceTree = "<group>"; };
 		15A6969B1630E63B00D7A229 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/AppMacros.h; sourceTree = "<group>"; };
 		41BC70AC15BF7CCE006A0A6C /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
-		41CD6C5115BF748C005E6F29 /* HelloCpp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCpp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		41CD6C5415BF74E5005E6F29 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../../cocos2dx/proj.mac/cocos2dx.xcodeproj; sourceTree = "<group>"; };
+		41CD6C5115BF748C005E6F29 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD6C6215BF7574005E6F29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		41CD6C6315BF7574005E6F29 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 		41CD6C6415BF7574005E6F29 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41CD6C6915BF7673005E6F29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		41CD6C6B15BF7673005E6F29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
-		41CD6C6C15BF7673005E6F29 /* HelloCpp_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelloCpp_Info.plist; sourceTree = "<group>"; };
-		41CD6C6D15BF7673005E6F29 /* HelloCpp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloCpp_Prefix.pch; sourceTree = "<group>"; };
+		41CD6C6C15BF7673005E6F29 /* LevireTemplate_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LevireTemplate_Info.plist; sourceTree = "<group>"; };
+		41CD6C6D15BF7673005E6F29 /* LevireTemplate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevireTemplate_Prefix.pch; sourceTree = "<group>"; };
 		41CD6C7115BF76FB005E6F29 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		41CD6C7215BF76FB005E6F29 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
 		41CD6C7315BF76FB005E6F29 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = ../Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -76,6 +68,7 @@
 		41CD6C8E15BF7793005E6F29 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		41CD6C9715BF77CE005E6F29 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		41CD6C9815BF77CE005E6F29 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		797FBD0C169B74E100B84994 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../cocos2dx/proj.mac/cocos2dx.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797FBD15169B74F200B84994 /* libcocos2dx.a in Frameworks */,
 				41CD6C8F15BF7793005E6F29 /* AppKit.framework in Frameworks */,
 				41CD6C9015BF7793005E6F29 /* AudioToolbox.framework in Frameworks */,
 				41CD6C9115BF7793005E6F29 /* Cocoa.framework in Frameworks */,
@@ -93,7 +87,6 @@
 				41CD6C9615BF7793005E6F29 /* QuartzCore.framework in Frameworks */,
 				41CD6C9915BF77CE005E6F29 /* libxml2.dylib in Frameworks */,
 				41CD6C9A15BF77CE005E6F29 /* libz.dylib in Frameworks */,
-				41BC70B715BF7E14006A0A6C /* libcocos2dx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,21 +96,13 @@
 		41851B8715B93C32004083E9 = {
 			isa = PBXGroup;
 			children = (
-				41CD6C5415BF74E5005E6F29 /* cocos2dx.xcodeproj */,
+				797FBD0C169B74E100B84994 /* cocos2dx.xcodeproj */,
 				41CD6C5D15BF750B005E6F29 /* Classes */,
 				41CD6C5E15BF7514005E6F29 /* Frameworks */,
 				41CD6C5F15BF7522005E6F29 /* mac */,
 				41EFC1BB15BF7AC30083EA95 /* Products */,
 				41CD6C6115BF7556005E6F29 /* Resources */,
 			);
-			sourceTree = "<group>";
-		};
-		41CD6C5515BF74E5005E6F29 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41CD6C5C15BF74E5005E6F29 /* libcocos2dx.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		41CD6C5D15BF750B005E6F29 /* Classes */ = {
@@ -157,8 +142,8 @@
 				41CD6C6415BF7574005E6F29 /* main.m */,
 				41BC70AC15BF7CCE006A0A6C /* Icon.icns */,
 				41CD6C6715BF7673005E6F29 /* en.lproj */,
-				41CD6C6C15BF7673005E6F29 /* HelloCpp_Info.plist */,
-				41CD6C6D15BF7673005E6F29 /* HelloCpp_Prefix.pch */,
+				41CD6C6C15BF7673005E6F29 /* LevireTemplate_Info.plist */,
+				41CD6C6D15BF7673005E6F29 /* LevireTemplate_Prefix.pch */,
 			);
 			name = mac;
 			sourceTree = "<group>";
@@ -185,7 +170,15 @@
 		41EFC1BB15BF7AC30083EA95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41CD6C5115BF748C005E6F29 /* HelloCpp.app */,
+				41CD6C5115BF748C005E6F29 /* LevireTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797FBD0D169B74E100B84994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797FBD14169B74E200B84994 /* libcocos2dx.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41851B9115B93C32004083E9 /* HelloCpp */ = {
+		41851B9115B93C32004083E9 /* LevireTemplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41851BB015B93C33004083E9 /* Build configuration list for PBXNativeTarget "HelloCpp" */;
+			buildConfigurationList = 41851BB015B93C33004083E9 /* Build configuration list for PBXNativeTarget "LevireTemplate" */;
 			buildPhases = (
 				41851B8E15B93C32004083E9 /* Sources */,
 				41851B8F15B93C32004083E9 /* Frameworks */,
@@ -204,11 +197,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				41EFC1BA15BF79BD0083EA95 /* PBXTargetDependency */,
 			);
-			name = HelloCpp;
+			name = LevireTemplate;
 			productName = Paralaxer;
-			productReference = 41CD6C5115BF748C005E6F29 /* HelloCpp.app */;
+			productReference = 41CD6C5115BF748C005E6F29 /* LevireTemplate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +212,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Bullets in a Burning Box, Inc.";
 			};
-			buildConfigurationList = 41851B8C15B93C32004083E9 /* Build configuration list for PBXProject "HelloCpp" */;
+			buildConfigurationList = 41851B8C15B93C32004083E9 /* Build configuration list for PBXProject "LevireTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,23 +224,23 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 41CD6C5515BF74E5005E6F29 /* Products */;
-					ProjectRef = 41CD6C5415BF74E5005E6F29 /* cocos2dx.xcodeproj */;
+					ProductGroup = 797FBD0D169B74E100B84994 /* Products */;
+					ProjectRef = 797FBD0C169B74E100B84994 /* cocos2dx.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				41851B9115B93C32004083E9 /* HelloCpp */,
+				41851B9115B93C32004083E9 /* LevireTemplate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		41CD6C5C15BF74E5005E6F29 /* libcocos2dx.a */ = {
+		797FBD14169B74E200B84994 /* libcocos2dx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libcocos2dx.a;
-			remoteRef = 41CD6C5B15BF74E5005E6F29 /* PBXContainerItemProxy */;
+			remoteRef = 797FBD13169B74E200B84994 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -282,14 +274,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		41EFC1BA15BF79BD0083EA95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cocos2dx;
-			targetProxy = 41EFC1B915BF79BD0083EA95 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41CD6C6815BF7673005E6F29 /* InfoPlist.strings */ = {
@@ -364,7 +348,7 @@
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = HelloCpp_Prefix.pch;
+				GCC_PREFIX_HEADER = LevireTemplate_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					TARGET_OS_MAC,
 					"DEBUG=1",
@@ -376,17 +360,17 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
-					"\"$(SRCROOT)/../../../cocos2dx/include\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
-					"\"$(SRCROOT)/../../../cocos2dx/platform/mac\"",
-					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../cocos2dx\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
+					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 				);
-				INFOPLIST_FILE = HelloCpp_Info.plist;
+				INFOPLIST_FILE = LevireTemplate_Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = HelloCpp;
+				PRODUCT_NAME = LevireTemplate;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -399,7 +383,7 @@
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = HelloCpp_Prefix.pch;
+				GCC_PREFIX_HEADER = LevireTemplate_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					USE_FILE32API,
 					TARGET_OS_MAC,
@@ -410,17 +394,17 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
-					"\"$(SRCROOT)/../../../cocos2dx/include\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
-					"\"$(SRCROOT)/../../../cocos2dx/platform/mac\"",
-					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../cocos2dx\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
+					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 				);
-				INFOPLIST_FILE = HelloCpp_Info.plist;
+				INFOPLIST_FILE = LevireTemplate_Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = HelloCpp;
+				PRODUCT_NAME = LevireTemplate;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -428,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41851B8C15B93C32004083E9 /* Build configuration list for PBXProject "HelloCpp" */ = {
+		41851B8C15B93C32004083E9 /* Build configuration list for PBXProject "LevireTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41851BAE15B93C33004083E9 /* Debug */,
@@ -437,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41851BB015B93C33004083E9 /* Build configuration list for PBXNativeTarget "HelloCpp" */ = {
+		41851BB015B93C33004083E9 /* Build configuration list for PBXNativeTarget "LevireTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41851BB115B93C33004083E9 /* Debug */,
