@@ -1,3 +1,14 @@
+/****************************************************************************
+ Created by Levire UG (haftungsbeschraenkt) & Co. KG , http://www.levire.com
+ 
+ This program is free software. It comes without any warranty, to
+ the extent permitted by applicable law. You can redistribute it
+ and/or modify it under the terms of the Do What The Fuck You Want
+ To Public License, Version 2, as published by Sam Hocevar. See
+ http://www.wtfpl.net/ for more details.
+ 
+ ****************************************************************************/
+
 #include "JniHelper.h"
 #include <jni.h>
 #include "Java_com_levire_ouyabind_Controller.h"
@@ -24,8 +35,12 @@ extern "C"
                                                                             playerNum);
             
 			methodInfo.env->DeleteLocalRef(methodInfo.classID);
-            return ouyaController;
+            return methodInfo.env->NewGlobalRef(ouyaController);
 		}
+        else
+        {
+            CCLOG("Error Method: getControllerByPlayer not available");
+        }
         return NULL;
 	}
     
@@ -47,6 +62,10 @@ extern "C"
 			methodInfo.env->DeleteLocalRef(methodInfo.classID);
             return methodInfo.env->NewGlobalRef(ouyaController);
 		}
+        else
+        {
+            CCLOG("Error Method: getControllerByDeviceId not available");
+        }
         return NULL;
     }
     
@@ -66,6 +85,10 @@ extern "C"
                                                                   button);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
             return buttonPressed;
+        }
+        else
+        {
+            CCLOG("Error Method: getButton not available");
         }
         return false;
     }
@@ -87,19 +110,21 @@ extern "C"
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
             return axisValue;
         }
+        else
+        {
+            CCLOG("Error Method: getAxisValue not available");
+        }
         return 0.0f;
     }
     
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
-        CCLOG("Received KeyDownEvent %d from Device: %d",keyCode,deviceId);
         CCOuyaController::onKeyDown(keyCode, deviceId);
     }
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyUp(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
-        CCLOG("Received KeyUpEvent %d from Device: %d",keyCode,deviceId);
         CCOuyaController::onKeyUp(keyCode, deviceId);
     }
     
@@ -117,7 +142,10 @@ extern "C"
     {
         JNIEnv *env;
         if (JniHelper::getJavaVM()->GetEnv((void**)&env, JNI_VERSION_1_4) != JNI_OK)
+        {
+            CCLOG("Error deleting global JReference");
             return false;
+        }
         else
         {
             env->DeleteGlobalRef(globalRef);
