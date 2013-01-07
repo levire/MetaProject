@@ -97,10 +97,15 @@ bool HelloWorld::init()
 
 void HelloWorld::update(float fDelta)
 {
-//    if (isOuyaButtonPressed(BUTTON_A,this->ouyaController))
-//    {
-//        CCLOG("Pressed A");
-//    }
+    if (player[0] && player[0]->isButtonPressed(BUTTON_A))
+    {
+        CCLOG("Player 0 - Pressed A");
+    }
+
+    if (player[1] && player[1]->isButtonPressed(BUTTON_A))
+    {
+        CCLOG("Player 1 - Pressed A");
+    }
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
@@ -153,18 +158,14 @@ int playerId(cocos2d::CCOuyaController *controller)
 
 void HelloWorld::onControllerKeyDown(int keyCode, cocos2d::CCOuyaController* controller)
 {
-    if (playerRegistered(controller))
+    if (!playerRegistered(controller))
     {
-        CCLOG("Player %d pressed %d", playerId(controller), keyCode);
-    }
-    else
-    {
-        int player = registerPlayer(controller);
-        CCLOG("Player %d entered the game!", playerId(controller));   
+        int playerId = registerPlayer(controller);
+        CCLOG("Player %d entered the game!", playerId);
     }
 }
 
 void HelloWorld::onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* controller)
 {
-    CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
+    //CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
 }
