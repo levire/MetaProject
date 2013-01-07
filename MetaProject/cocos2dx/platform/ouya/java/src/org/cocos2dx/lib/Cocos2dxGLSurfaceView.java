@@ -266,6 +266,13 @@ public class Cocos2dxGLSurfaceView extends GLSurfaceView {
 		*/
 		return true;
 	}
+	
+	@Override
+	public boolean onGenericMotionEvent(final MotionEvent event)
+	{
+		super.onGenericMotionEvent(event);
+		return OuyaBindController.onGenericMotionEvent(event);
+	}
 
 	/*
 	 * This function is called before Cocos2dxRenderer.nativeInit(), so the
@@ -294,6 +301,13 @@ public class Cocos2dxGLSurfaceView extends GLSurfaceView {
 			default:
 				return super.onKeyDown(pKeyCode, pKeyEvent);
 		}
+	}
+	
+	@Override
+	public boolean onKeyUp(final int pKeyCode, final KeyEvent pKeyEvent)
+	{
+		super.onKeyUp(pKeyCode, pKeyEvent);
+		return OuyaBindController.onKeyUp(pKeyCode, pKeyEvent);
 	}
 
 	// ===========================================================

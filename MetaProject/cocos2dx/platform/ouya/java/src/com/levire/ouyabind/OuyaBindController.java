@@ -13,6 +13,13 @@ public class OuyaBindController
 		return ouyaController;
 	}
 	
+	public static OuyaController getControllerByDeviceId(int deviceId)
+	{
+		OuyaController controller = OuyaController.getControllerByDeviceId(deviceId);
+		Log.d("OUYA Controller", "Got controller: "+controller);
+		return controller;
+	}
+	
 	public static native void onNativeKeyDown(final int pKeyCode, final int deviceId);
 	public static boolean onKeyDown(final int pKeyCode, final KeyEvent pKeyEvent)
 	{
@@ -25,5 +32,12 @@ public class OuyaBindController
 	{
 		OuyaBindController.onNativeKeyUp(pKeyCode, pKeyEvent.getDeviceId());
 		return OuyaController.onKeyUp(pKeyCode, pKeyEvent);
+	}
+	
+	public static native void onNativeGenericMotionEvent(final int deviceId);
+	public static boolean onGenericMotionEvent(android.view.MotionEvent event)
+	{
+		OuyaBindController.onNativeGenericMotionEvent(event.getDeviceId());
+		return OuyaController.onGenericMotionEvent(event);
 	}
 }

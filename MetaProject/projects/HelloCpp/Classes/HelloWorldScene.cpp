@@ -79,10 +79,10 @@ bool HelloWorld::init()
     this->addChild(pSprite, 0);
     
     CCLOG("Initialized scene");
-    jobject ouyaController = getOuyaControllerByPlayer(1);
+    jobject ouyaController = getOuyaControllerByDeviceId(3);
     if (ouyaController != NULL)
     {
-        CCLOG("Found one Controller");
+        CCLOG("Received Found one Controller");
     }
     return true;
 }
