@@ -2,6 +2,8 @@
 #include "AppMacros.h"
 #include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
 
+#include "platform/ouya/CCOuyaController.h"
+
 
 USING_NS_CC;
 
@@ -81,22 +83,21 @@ bool HelloWorld::init()
     this->scheduleUpdate();
     
     CCLOG("Initialized scene");
-    jobject ouyaController = getOuyaControllerByDeviceId(3);
+
+    CCOuyaController* ouyaController = CCOuyaController::controllerByDeviceId(2);
     if (ouyaController != NULL)
     {
         CCLOG("Received Found one Controller");
-        
-        this->ouyaController = ouyaController;
     }
     return true;
 }
 
 void HelloWorld::update(float fDelta)
 {
-    if (isOuyaButtonPressed(BUTTON_A,this->ouyaController))
-    {
-        CCLOG("Pressed A");
-    }
+//    if (isOuyaButtonPressed(BUTTON_A,this->ouyaController))
+//    {
+//        CCLOG("Pressed A");
+//    }
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)

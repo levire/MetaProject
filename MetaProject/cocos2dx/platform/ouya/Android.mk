@@ -92,6 +92,7 @@ platform/ouya/jni/Java_com_levire_ouyabind_Controller.cpp \
 platform/ouya/jni/JniHelper.cpp \
 platform/ouya/jni/IMEJni.cpp \
 platform/ouya/jni/TouchesJni.cpp \
+platform/ouya/CCOuyaController.cpp \
 script_support/CCScriptSupport.cpp \
 shaders/ccShaders.cpp \
 shaders/CCGLProgram.cpp \
