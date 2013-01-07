@@ -2,6 +2,7 @@
 #include <jni.h>
 #include "Java_com_levire_ouyabind_Controller.h"
 #include "platform/CCCommon.h"
+#include "platform/ouya/CCOuyaController.h"
 
 using namespace cocos2d;
 
@@ -73,11 +74,13 @@ extern "C"
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
         CCLOG("Received KeyDownEvent %d from Device: %d",keyCode,deviceId);
+        CCOuyaController::onKeyDown(keyCode, deviceId);
     }
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyUp(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
         CCLOG("Received KeyUpEvent %d from Device: %d",keyCode,deviceId);
+        CCOuyaController::onKeyUp(keyCode, deviceId);
     }
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeGenericMotionEvent(JNIEnv* env, jobject thiz, jint deviceId)
