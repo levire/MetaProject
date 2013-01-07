@@ -14,3 +14,7 @@ clean:
 	rm -rf gen/
 	rm -rf assets/*
 
+ccclean:
+	rm -rf ../../../cocos2dx/platform/android/java/bin/*
+	rm -rf ../../../cocos2dx/platform/android/java/gen/
+
