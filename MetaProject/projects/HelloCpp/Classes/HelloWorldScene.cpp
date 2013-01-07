@@ -85,6 +85,10 @@ bool HelloWorld::init()
     CCLOG("Initialized scene");
 
     CCOuyaController* ouyaController = CCOuyaController::controllerByDeviceId(2);
+    
+    jobject ref = getOuyaControllerByDeviceId(2);
+    deleteGlobalJNIRef(ref);
+    
     if (ouyaController != NULL)
     {
         CCLOG("Received Found one Controller");
