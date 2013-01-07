@@ -1,11 +1,11 @@
 CC      = gcc
 CXX     = g++
 TARGET	= HelloCpp
-CCFLAGS = -Wall
-CXXFLAGS = -Wall
+CCFLAGS = -Wall -Os
+CXXFLAGS = -Wall -Os
 VISIBILITY = 
 
-COCOS2DX_PATH = ../../../cocos2dx
+COCOS2DX_PATH = ../../cocos2dx
 INCLUDES =  -I../ \
 			-I../Classes \
 			-I$(COCOS2DX_PATH) \
@@ -29,9 +29,9 @@ OBJECTS = ./main.o \
 
 LBITS := $(shell getconf LONG_BIT)
 ifeq ($(LBITS),64)
-STATICLIBS_DIR = ../../../cocos2dx/platform/third_party/linux/libraries/lib64
+STATICLIBS_DIR = $(COCOS2DX_PATH)/platform/third_party/linux/libraries/lib64
 else
-STATICLIBS_DIR = ../../../cocos2dx/platform/third_party/linux/libraries
+STATICLIBS_DIR = $(COCOS2DX_PATH)/platform/third_party/linux/libraries
 endif
 STATICLIBS = 
 STATICLIBS = $(STATICLIBS_DIR)/libfreetype.a \
@@ -43,19 +43,19 @@ STATICLIBS = $(STATICLIBS_DIR)/libfreetype.a \
 
 SHAREDLIBS = 
 ifeq ($(LBITS),64)
-SHAREDLIBS_DIR = ../../../CocosDenshion/third_party/fmod/lib64/api/lib
+SHAREDLIBS_DIR = ../../CocosDenshion/third_party/fmod/lib64/api/lib
 SHAREDLIBS = -L$(SHAREDLIBS_DIR) -lfmodex64
 else
-SHAREDLIBS_DIR = ../../../CocosDenshion/third_party/fmod/api/lib
+SHAREDLIBS_DIR = ../../CocosDenshion/third_party/fmod/api/lib
 SHAREDLIBS = -L$(SHAREDLIBS_DIR) -lfmodex
 endif
 
 SHAREDLIBS += -lglfw -lGL
 #SHAREDLIBS += -L../../../lib/linux/Debug -lcocos2d -lrt -lz -lcocosdenshion -Wl,-rpath,../../../../lib/linux/Debug/ 
 SHAREDLIBS += -Wl,-rpath,../../$(SHAREDLIBS_DIR)
-#SHAREDLIBS += -Wl,-rpath,../../../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib
-SHAREDLIBS += -L../../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib -lGLEW
-SHAREDLIBS += -Wl,-rpath,../../../../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib
+#SHAREDLIBS += -Wl,-rpath,../../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib
+SHAREDLIBS += -L../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib -lGLEW
+SHAREDLIBS += -Wl,-rpath,../../../../cocos2dx/platform/third_party/linux/glew-1.7.0/glew-1.7.0/lib
 
 #$(shell ../../build-linux.sh $<)
 
