@@ -6,7 +6,7 @@ LOCAL_MODULE := hellocpp_shared
 
 LOCAL_MODULE_FILENAME := libhellocpp
 
-LOCAL_CFLAGS += -DCOCOS2D_DEBUG=1
+LOCAL_CFLAGS +=  -DOUYA=1 -DCOCOS2D_DEBUG=1
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \

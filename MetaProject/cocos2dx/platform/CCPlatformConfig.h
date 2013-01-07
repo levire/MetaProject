@@ -43,6 +43,7 @@ Config of cocos2d-x project, per target platform.
 #define CC_PLATFORM_BADA               6
 #define CC_PLATFORM_BLACKBERRY         7
 #define CC_PLATFORM_MAC                8
+#define CC_PLATFORM_OUYA               9
 
 // Determine target platform by compile environment macro.
 #define CC_TARGET_PLATFORM             CC_PLATFORM_UNKNOWN
@@ -95,6 +96,12 @@ Config of cocos2d-x project, per target platform.
     #undef  CC_TARGET_PLATFORM
     #define CC_TARGET_PLATFORM         CC_PLATFORM_MAC
     //#define CC_SUPPORT_PVRTC
+#endif
+
+// mac
+#if ! CC_TARGET_PLATFORM && defined(OUYA)
+    #undef  CC_TARGET_PLATFORM
+    #define CC_TARGET_PLATFORM         CC_PLATFORM_OUYA
 #endif
 
 //////////////////////////////////////////////////////////////////////////

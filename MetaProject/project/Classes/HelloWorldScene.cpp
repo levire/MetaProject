@@ -1,14 +1,18 @@
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
 #include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
 #include "platform/ouya/CCOuyaController.h"
 #include <jni.h>
+#endif
 
 USING_NS_CC;
 
 #define COCOS_DEBUG 1
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
 cocos2d::CCOuyaController* player[4];
+#endif
 
 CCScene* HelloWorld::scene()
 {
@@ -21,11 +25,12 @@ CCScene* HelloWorld::scene()
     // add layer as a child to scene
     scene->addChild(layer);
 
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
     player[0] = NULL;
     player[1] = NULL;
     player[2] = NULL;
     player[3] = NULL;
-
+    #endif
     // return the scene
     return scene;
 }
@@ -89,14 +94,15 @@ bool HelloWorld::init()
     this->scheduleUpdate();
     
     CCLOG("Initialized scene");
-
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
     CCOuyaController::addListener(this);
-
+    #endif
     return true;
 }
 
 void HelloWorld::update(float fDelta)
 {
+    #if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
     if (player[0] && player[0]->isButtonPressed(BUTTON_A))
     {
         CCLOG("Player 0 - Pressed A");
@@ -106,6 +112,7 @@ void HelloWorld::update(float fDelta)
     {
         CCLOG("Player 1 - Pressed A");
     }
+    #endif
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
@@ -116,7 +123,7 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     exit(0);
 #endif
 }
-
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
 bool playerRegistered(cocos2d::CCOuyaController *controller)
 {
     for (int i=0; i<4; i++) 
@@ -179,3 +186,4 @@ void HelloWorld::onControllerRightStickMotion(float axisXValue, float axisYValue
 {
     CCLOG("onControllerRIGHTStick(%f, %f, %d)", axisXValue, axisYValue, controller);
 }
+#endif
