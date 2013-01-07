@@ -96,4 +96,9 @@ bool CCOuyaController::registered(IOuyaControllerListener* listener)
 	return false;
 }
 
+bool CCOuyaController::isButtonPressed(OuyaButton button)
+{
+	return isOuyaButtonPressed(button, this->jniLinkToOuyaController);
+}
+
 NS_CC_END

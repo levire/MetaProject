@@ -8,6 +8,8 @@ USING_NS_CC;
 
 #define COCOS_DEBUG 1
 
+cocos2d::CCOuyaController* player[4];
+
 CCScene* HelloWorld::scene()
 {
     // 'scene' is an autorelease object
@@ -18,6 +20,11 @@ CCScene* HelloWorld::scene()
 
     // add layer as a child to scene
     scene->addChild(layer);
+
+    player[0] = NULL;
+    player[1] = NULL;
+    player[2] = NULL;
+    player[3] = NULL;
 
     // return the scene
     return scene;
@@ -105,9 +112,56 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 #endif
 }
 
+bool playerRegistered(cocos2d::CCOuyaController *controller)
+{
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == controller)
+            return true;
+    }
+
+    return false;
+}
+
+int registerPlayer(cocos2d::CCOuyaController *controller)
+{
+    if (playerRegistered(controller))
+        return -1;
+
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == NULL)
+        {
+            player[i] = controller;
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+int playerId(cocos2d::CCOuyaController *controller)
+{
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == controller)
+            return i;
+    }
+
+    return -1;
+}
+
 void HelloWorld::onControllerKeyDown(int keyCode, cocos2d::CCOuyaController* controller)
 {
-    CCLOG("onControllerKeyDown(%d, %d)", keyCode, controller);
+    if (playerRegistered(controller))
+    {
+        CCLOG("Player %d pressed %d", playerId(controller), keyCode);
+    }
+    else
+    {
+        int player = registerPlayer(controller);
+        CCLOG("Player %d entered the game!", playerId(controller));   
+    }
 }
 
 void HelloWorld::onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* controller)
