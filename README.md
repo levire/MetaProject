@@ -19,3 +19,9 @@ How to start
 2. Place your code under project/Classes
 3. Compile the code using the apropriate proj.* folder
 4. Change the product and class names as you wish for the specific platforms
+
+Contact us
+----------
+Website: http://www.levire.com
+Blog: http://blog.levire.com
+Mail: info@levire.com
