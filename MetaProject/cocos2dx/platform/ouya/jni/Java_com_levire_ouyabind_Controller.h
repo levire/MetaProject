@@ -5,7 +5,7 @@
 
 extern "C"
 {
-    enum OuyaButton
+    enum OuyaControllerButton
     {
         BUTTON_O = 96,
         BUTTON_U = 99,
@@ -21,21 +21,36 @@ extern "C"
         BUTTON_DPAD_LEFT = 21,
         BUTTON_DPAD_RIGHT = 22,
         BUTTON_R3 = 107,
-        BUTTON_L3 = 106
-    } ;
+        BUTTON_L3 = 106,
+        AXIS_L2 = 17,
+        AXIS_R2 = 18
+    };
+    
+    enum OuyaControllerAxis
+    {
+        AXIS_LS_X = 0,
+        AXIS_LS_Y = 1,
+        
+        AXIS_RS_X = 11,
+        AXIS_RS_Y = 14        
+    };
     
     
 	jobject getOuyaControllerByPlayer(int playerNum);
     
     jobject getOuyaControllerByDeviceId(int deviceID);
     
-    bool isOuyaButtonPressed(OuyaButton button, jobject ouyaControllerGlobalRef);
+    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerGlobalRef);
+    
+    float getAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef);
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId);
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyUp(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId);
     
-    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeGenericMotionEvent(JNIEnv* env, jobject thiz, jint deviceId);
+    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeLeftStickMotionEvent(JNIEnv* env, jobject thiz, jint deviceId, jfloat axisXValue, jfloat axisYValue);
+    
+    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeRightStickMotionEvent(JNIEnv* env, jobject thiz, jint deviceId, jfloat axisXValue, jfloat axisYValue);
     
     bool deleteGlobalJNIRef(jobject globalRef);
 }

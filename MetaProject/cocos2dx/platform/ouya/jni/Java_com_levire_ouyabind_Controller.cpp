@@ -50,7 +50,7 @@ extern "C"
         return NULL;
     }
     
-    bool isOuyaButtonPressed(OuyaButton button, jobject ouyaControllerGlobalRef)
+    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerGlobalRef)
     {
         JniMethodInfo methodInfo;
         
@@ -70,6 +70,26 @@ extern "C"
         return false;
     }
     
+    float getAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef)
+    {
+        JniMethodInfo methodInfo;
+        
+        bool isMethodAvailable = JniHelper::getMethodInfo(methodInfo,
+                                                          "tv/ouya/console/api/OuyaController",
+                                                          "getAxisValue",
+                                                          "(I)F");
+        
+        if (isMethodAvailable)
+        {
+            float axisValue = methodInfo.env->CallBooleanMethod(ouyaControllerGlobalRef,
+                                                                   methodInfo.methodID,
+                                                                   controllerAxis);
+            methodInfo.env->DeleteLocalRef(methodInfo.classID);
+            return axisValue;
+        }
+        return 0.0f;
+    }
+    
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
@@ -83,9 +103,14 @@ extern "C"
         CCOuyaController::onKeyUp(keyCode, deviceId);
     }
     
-    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeGenericMotionEvent(JNIEnv* env, jobject thiz, jint deviceId)
+    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeLeftStickMotionEvent(JNIEnv* env, jobject thiz, jint deviceId, jfloat axisXValue, jfloat axisYValue)
     {
-        ;
+        CCOuyaController::onLeftStickMotion(axisXValue, axisYValue,deviceId);
+    }
+    
+    JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeRightStickMotionEvent(JNIEnv* env, jobject thiz, jint deviceId, jfloat axisXValue, jfloat axisYValue)
+    {
+        CCOuyaController::onRightStickMotion(axisXValue, axisYValue,deviceId);
     }
     
     bool deleteGlobalJNIRef(jobject globalRef)

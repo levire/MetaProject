@@ -24,6 +24,9 @@ public:
 
     virtual void onControllerKeyDown(int keyCode, cocos2d::CCOuyaController* controller);
 	virtual void onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* controller);
+    
+    virtual void onControllerLeftStickMotion(float axisXValue, float axisYValue, cocos2d::CCOuyaController* controller);
+    virtual void onControllerRightStickMotion(float axisXValue, float axisYValue, cocos2d::CCOuyaController* controller);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

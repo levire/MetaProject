@@ -23,21 +23,29 @@ public class OuyaBindController
 	public static native void onNativeKeyDown(final int pKeyCode, final int deviceId);
 	public static boolean onKeyDown(final int pKeyCode, final KeyEvent pKeyEvent)
 	{
+		boolean handled = OuyaController.onKeyDown(pKeyCode, pKeyEvent);
 		OuyaBindController.onNativeKeyDown(pKeyCode, pKeyEvent.getDeviceId());
-		return OuyaController.onKeyDown(pKeyCode, pKeyEvent);
+		return handled;
 	}
 	
 	public static native void onNativeKeyUp(final int pKeyCode, final int deviceId);
 	public static boolean onKeyUp(final int pKeyCode, final KeyEvent pKeyEvent)
 	{
+		boolean handled = OuyaController.onKeyUp(pKeyCode, pKeyEvent);
 		OuyaBindController.onNativeKeyUp(pKeyCode, pKeyEvent.getDeviceId());
-		return OuyaController.onKeyUp(pKeyCode, pKeyEvent);
+		return handled;
 	}
 	
-	public static native void onNativeGenericMotionEvent(final int deviceId);
+	public static native void onNativeLeftStickMotionEvent(final int deviceId, final float axisXValue, final float axisYValue);
+	public static native void onNativeRightStickMotionEvent(final int deviceId, final float axisXValue, final float axisYValue);
+	
 	public static boolean onGenericMotionEvent(android.view.MotionEvent event)
 	{
-		OuyaBindController.onNativeGenericMotionEvent(event.getDeviceId());
-		return OuyaController.onGenericMotionEvent(event);
+		boolean handled = OuyaController.onGenericMotionEvent(event);
+		OuyaController controller = OuyaController.getControllerByDeviceId(event.getDeviceId());
+		
+		OuyaBindController.onNativeLeftStickMotionEvent(event.getDeviceId(), controller.getAxisValue(OuyaController.AXIS_LS_X), controller.getAxisValue(OuyaController.AXIS_LS_Y));
+		OuyaBindController.onNativeRightStickMotionEvent(event.getDeviceId(), controller.getAxisValue(OuyaController.AXIS_RS_X), controller.getAxisValue(OuyaController.AXIS_RS_Y));
+		return handled;
 	}
 }

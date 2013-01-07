@@ -63,6 +63,26 @@ void CCOuyaController::onKeyUp(int keyCode, int deviceId)
 	}
 }
 
+void CCOuyaController::onLeftStickMotion(float axisXValue, float axisYValue, int deviceId)
+{
+    for (Listeners::iterator it = CCOuyaController::listeners.begin();
+         it != CCOuyaController::listeners.end();
+         it++)
+	{
+		(*it)->onControllerLeftStickMotion(axisXValue, axisYValue, CCOuyaController::controllerByDeviceId(deviceId));
+	}
+}
+
+void CCOuyaController::onRightStickMotion(float axisXValue, float axisYValue, int deviceId)
+{
+    for (Listeners::iterator it = CCOuyaController::listeners.begin();
+         it != CCOuyaController::listeners.end();
+         it++)
+	{
+		(*it)->onControllerRightStickMotion(axisXValue, axisYValue, CCOuyaController::controllerByDeviceId(deviceId));
+	}
+}
+
 void CCOuyaController::addListener(IOuyaControllerListener* listener)
 {
 	if (!CCOuyaController::registered(listener))

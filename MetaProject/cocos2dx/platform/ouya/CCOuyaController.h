@@ -14,6 +14,9 @@ class IOuyaControllerListener
 public:
 	virtual void onControllerKeyDown(int keyCode, CCOuyaController* controller) =0;
 	virtual void onControllerKeyUp(int keyCode, CCOuyaController* controller) =0;
+    
+    virtual void onControllerLeftStickMotion(float axisXValue, float axisYValue, CCOuyaController* controller) =0;
+    virtual void onControllerRightStickMotion(float axisXValue, float axisYValue, CCOuyaController* controller) =0;
 };
 
 class CC_DLL CCOuyaController
@@ -23,6 +26,9 @@ public:
 	static CCOuyaController* controllerByDeviceId(int deviceId);
 	static void onKeyDown(int keyCode, int deviceId);
 	static void onKeyUp(int keyCode, int deviceId);
+    
+    static void onLeftStickMotion(float axisXValue, float axisYValue, int deviceId);
+    static void onRightStickMotion(float axisXValue, float axisYValue, int deviceId);
 
 	static void addListener(IOuyaControllerListener* listener);
 	static void removeListener(IOuyaControllerListener* listener);

@@ -114,3 +114,13 @@ void HelloWorld::onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* contr
 {
     CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
 }
+
+void HelloWorld::onControllerLeftStickMotion(float axisXValue, float axisYValue, cocos2d::CCOuyaController* controller)
+{
+    CCLOG("onControllerLEFTStick(%f, %f, %d)", axisXValue, axisYValue, controller);
+}
+
+void HelloWorld::onControllerRightStickMotion(float axisXValue, float axisYValue, cocos2d::CCOuyaController* controller)
+{
+    CCLOG("onControllerRIGHTStick(%f, %f, %d)", axisXValue, axisYValue, controller);
+}
