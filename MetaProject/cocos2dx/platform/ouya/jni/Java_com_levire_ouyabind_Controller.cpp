@@ -113,7 +113,7 @@ extern "C"
         CCOuyaController::onRightStickMotion(axisXValue, axisYValue,deviceId);
     }
     
-    bool deleteGlobalJNIRef(jobject globalRef)
+    bool deleteOuyaControllerJNIRef(jobject globalRef)
     {
         JNIEnv *env;
         if (JniHelper::getJavaVM()->GetEnv((void**)&env, JNI_VERSION_1_4) != JNI_OK)

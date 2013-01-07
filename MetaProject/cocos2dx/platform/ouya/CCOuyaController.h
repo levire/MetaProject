@@ -4,6 +4,7 @@
 #include <map>
 #include <vector>
 #include <jni.h>
+#include "platform/ouya/jni/Java_com_levire_ouyabind_Controller.h"
 #include "cocos2d.h"
 
 NS_CC_BEGIN
@@ -33,6 +34,12 @@ public:
 	static void addListener(IOuyaControllerListener* listener);
 	static void removeListener(IOuyaControllerListener* listener);
 	static bool registered(IOuyaControllerListener* listener);
+
+	static void freeControllerCache();
+
+	bool isButtonPressed(OuyaButton button);
+
+	virtual ~CCOuyaController();
 
 private:
 

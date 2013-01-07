@@ -8,6 +8,8 @@ USING_NS_CC;
 
 #define COCOS_DEBUG 1
 
+cocos2d::CCOuyaController* player[4];
+
 CCScene* HelloWorld::scene()
 {
     // 'scene' is an autorelease object
@@ -18,6 +20,11 @@ CCScene* HelloWorld::scene()
 
     // add layer as a child to scene
     scene->addChild(layer);
+
+    player[0] = NULL;
+    player[1] = NULL;
+    player[2] = NULL;
+    player[3] = NULL;
 
     // return the scene
     return scene;
@@ -90,10 +97,15 @@ bool HelloWorld::init()
 
 void HelloWorld::update(float fDelta)
 {
-//    if (isOuyaButtonPressed(BUTTON_A,this->ouyaController))
-//    {
-//        CCLOG("Pressed A");
-//    }
+    if (player[0] && player[0]->isButtonPressed(BUTTON_A))
+    {
+        CCLOG("Player 0 - Pressed A");
+    }
+
+    if (player[1] && player[1]->isButtonPressed(BUTTON_A))
+    {
+        CCLOG("Player 1 - Pressed A");
+    }
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
@@ -105,14 +117,57 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 #endif
 }
 
+bool playerRegistered(cocos2d::CCOuyaController *controller)
+{
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == controller)
+            return true;
+    }
+
+    return false;
+}
+
+int registerPlayer(cocos2d::CCOuyaController *controller)
+{
+    if (playerRegistered(controller))
+        return -1;
+
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == NULL)
+        {
+            player[i] = controller;
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+int playerId(cocos2d::CCOuyaController *controller)
+{
+    for (int i=0; i<4; i++) 
+    {
+        if (player[i] == controller)
+            return i;
+    }
+
+    return -1;
+}
+
 void HelloWorld::onControllerKeyDown(int keyCode, cocos2d::CCOuyaController* controller)
 {
-    CCLOG("onControllerKeyDown(%d, %d)", keyCode, controller);
+    if (!playerRegistered(controller))
+    {
+        int playerId = registerPlayer(controller);
+        CCLOG("Player %d entered the game!", playerId);
+    }
 }
 
 void HelloWorld::onControllerKeyUp(int keyCode, cocos2d::CCOuyaController* controller)
 {
-    CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
+    //CCLOG("onControllerKeyUp(%d, %d)", keyCode, controller);
 }
 
 void HelloWorld::onControllerLeftStickMotion(float axisXValue, float axisYValue, cocos2d::CCOuyaController* controller)

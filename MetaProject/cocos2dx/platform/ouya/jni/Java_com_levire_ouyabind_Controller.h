@@ -52,7 +52,7 @@ extern "C"
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeRightStickMotionEvent(JNIEnv* env, jobject thiz, jint deviceId, jfloat axisXValue, jfloat axisYValue);
     
-    bool deleteGlobalJNIRef(jobject globalRef);
+    bool deleteOuyaControllerJNIRef(jobject globalRef);
 }
 
 #endif
