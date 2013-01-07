@@ -1,0 +1,14 @@
+MetaProject/cocos2dx/platform/ouya/java/bin
+MetaProject/cocos2dx/platform/ouya/java/gen
+MetaProject/projects/HelloCpp/proj.ouya/assets
+MetaProject/projects/HelloCpp/proj.ouya/bin
+MetaProject/projects/HelloCpp/proj.ouya/gen
+MetaProject/projects/HelloCpp/proj.ouya/obj
+MetaProject/cocos2dx/platform/android/java/bin
+MetaProject/cocos2dx/platform/android/java/gen
+MetaProject/projects/HelloCpp/proj.android/assets
+MetaProject/projects/HelloCpp/proj.android/bin
+MetaProject/projects/HelloCpp/proj.android/gen
+MetaProject/projects/HelloCpp/proj.android/obj
+MetaProject/projects/HelloCpp/proj.android/libs/armeabi
+MetaProject/projects/HelloCpp/proj.ouya/libs/armeabi
