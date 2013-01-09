@@ -6,7 +6,7 @@
 //
 //  Provides a basic example of a unit test using gtest
 
-#include <gtest.h>
+#include <gtest/gtest.h>
 
 TEST(Example, Success)
 {
