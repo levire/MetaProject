@@ -25,7 +25,6 @@
 		1B590699169E152800DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
 		1B59069A169E152800DC668C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E3143315EB00657E08 /* AppDelegate.cpp */; };
 		1B59069B169E152800DC668C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
-		1B59069D169E152800DC668C /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */; };
 		1B59069E169E152800DC668C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1B59069F169E152800DC668C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1B5906A0169E152800DC668C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -35,6 +34,8 @@
 		1B5906A4169E152800DC668C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF137426128A8E4600D9F789 /* QuartzCore.framework */; };
 		1B5906AC169E172200DC668C /* LevireTemplate-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */; };
 		1B5906B0169E199400DC668C /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B5906AE169E199400DC668C /* SampleTest.cpp */; };
+		1B59070A169E2A1F00DC668C /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5906FD169E29CE00DC668C /* libgtest.a */; };
+		1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -58,6 +59,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1B5906FA169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		1B5906FC169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		1B5906FE169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		1B590700169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		1B590702169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		1B590704169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		1B590706169E29CE00DC668C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
 		79E025B6169B6F8B00B2E3C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */;
@@ -76,6 +126,7 @@
 		1B5906AA169E152900DC668C /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LevireTemplateTests-Info.plist"; path = "/Users/kie/Projekte/MetaProject/MetaProject/project/proj.ios/LevireTemplateTests-Info.plist"; sourceTree = "<absolute>"; };
 		1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LevireTemplate-Info.plist"; sourceTree = "<group>"; };
 		1B5906AE169E199400DC668C /* SampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleTest.cpp; path = ../Tests/SampleTest.cpp; sourceTree = "<group>"; };
+		1B5906E7169E29CE00DC668C /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../gtest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -111,7 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B59069D169E152800DC668C /* libcocos2dx.a in Frameworks */,
+				1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */,
+				1B59070A169E2A1F00DC668C /* libgtest.a in Frameworks */,
 				1B59069E169E152800DC668C /* Foundation.framework in Frameworks */,
 				1B59069F169E152800DC668C /* UIKit.framework in Frameworks */,
 				1B5906A0169E152800DC668C /* CoreGraphics.framework in Frameworks */,
@@ -157,9 +209,24 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		1B5906E8169E29CE00DC668C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B5906FB169E29CE00DC668C /* gtest.framework */,
+				1B5906FD169E29CE00DC668C /* libgtest.a */,
+				1B5906FF169E29CE00DC668C /* libgtest_main.a */,
+				1B590701169E29CE00DC668C /* gtest_unittest-framework */,
+				1B590703169E29CE00DC668C /* gtest_unittest */,
+				1B590705169E29CE00DC668C /* sample1_unittest-framework */,
+				1B590707169E29CE00DC668C /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1B5906E7169E29CE00DC668C /* gtest.xcodeproj */,
 				79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */,
 				BF23D4E2143315EB00657E08 /* Classes */,
 				1B5906AD169E18C900DC668C /* Tests */,
@@ -303,6 +370,10 @@
 					ProductGroup = 79E025B0169B6F8A00B2E3C3 /* Products */;
 					ProjectRef = 79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */;
 				},
+				{
+					ProductGroup = 1B5906E8169E29CE00DC668C /* Products */;
+					ProjectRef = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -313,6 +384,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		1B5906FB169E29CE00DC668C /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = 1B5906FA169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B5906FD169E29CE00DC668C /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 1B5906FC169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B5906FF169E29CE00DC668C /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 1B5906FE169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B590701169E29CE00DC668C /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = 1B590700169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B590703169E29CE00DC668C /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = 1B590702169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B590705169E29CE00DC668C /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = 1B590704169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B590707169E29CE00DC668C /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = 1B590706169E29CE00DC668C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -408,7 +528,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
 					"\"$(SRCROOT)/../../cocos2dx/include\"",
@@ -416,6 +536,7 @@
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 					"$(SRCROOT)/../../external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../gtest/include",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -447,7 +568,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
 					"\"$(SRCROOT)/../../cocos2dx/include\"",
@@ -455,6 +576,7 @@
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 					"$(SRCROOT)/../../external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../gtest/include",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
@@ -559,7 +681,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -574,7 +696,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = NO;
