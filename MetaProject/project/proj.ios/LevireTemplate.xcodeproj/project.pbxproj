@@ -147,11 +147,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1B5906AD169E18C900DC668C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */,
 				BF23D4E2143315EB00657E08 /* Classes */,
+				1B5906AD169E18C900DC668C /* Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				BF5681CC1313A84D0055EEAC /* ios */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
