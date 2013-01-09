@@ -20,3 +20,6 @@ MetaProject/project/proj.ouya/libs/armeabi
 MetaProject/project/proj.ouya/obj
 MetaProject/cocos2dx/proj.ios/cocos2dx.xcodeproj/xcuserdata
 MetaProject/project/proj.ios/LevireTemplate.xcodeproj/project.xcworkspace/xcuserdata
+MetaProject/gtest/xcode/gtest.xcodeproj/xcuserdata
+MetaProject/gtest/xcode/gtest.xcodeproj/project.xcworkspace/xcuserdata
+*.xcworkspacedata
