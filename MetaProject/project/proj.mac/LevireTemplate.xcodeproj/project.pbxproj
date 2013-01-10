@@ -10,10 +10,29 @@
 		1514DA3F163004980095A81C /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3C163004980095A81C /* ipad */; };
 		1514DA40163004980095A81C /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3D163004980095A81C /* ipadhd */; };
 		1514DA41163004980095A81C /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3E163004980095A81C /* iphone */; };
-		1B175E98169F1EAD004010F6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B175E8D169F1EA0004010F6 /* libgtest.a */; };
-		1B175E9F169F1F2E004010F6 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9A169F1F2E004010F6 /* AppDelegate.cpp */; };
-		1B175EA0169F1F2E004010F6 /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9C169F1F2E004010F6 /* SampleTest.cpp */; };
-		1B175EA1169F1F2E004010F6 /* TestRunnerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9D169F1F2E004010F6 /* TestRunnerScene.cpp */; };
+		1B175EA4169F1FA1004010F6 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6315BF7574005E6F29 /* AppController.mm */; };
+		1B175EA5169F1FA1004010F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6415BF7574005E6F29 /* main.m */; };
+		1B175EA8169F1FA1004010F6 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9A169F1F2E004010F6 /* AppDelegate.cpp */; };
+		1B175EA9169F1FA1004010F6 /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9C169F1F2E004010F6 /* SampleTest.cpp */; };
+		1B175EAA169F1FA1004010F6 /* TestRunnerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9D169F1F2E004010F6 /* TestRunnerScene.cpp */; };
+		1B175EAC169F1FA1004010F6 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 797FBD14169B74E200B84994 /* libcocos2dx.a */; };
+		1B175EAD169F1FA1004010F6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B175E8D169F1EA0004010F6 /* libgtest.a */; };
+		1B175EAE169F1FA1004010F6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8715BF7793005E6F29 /* AppKit.framework */; };
+		1B175EAF169F1FA1004010F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8815BF7793005E6F29 /* AudioToolbox.framework */; };
+		1B175EB0169F1FA1004010F6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8915BF7793005E6F29 /* Cocoa.framework */; };
+		1B175EB1169F1FA1004010F6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8A15BF7793005E6F29 /* CoreFoundation.framework */; };
+		1B175EB2169F1FA1004010F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8B15BF7793005E6F29 /* Foundation.framework */; };
+		1B175EB3169F1FA1004010F6 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8C15BF7793005E6F29 /* OpenAL.framework */; };
+		1B175EB4169F1FA1004010F6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8D15BF7793005E6F29 /* OpenGL.framework */; };
+		1B175EB5169F1FA1004010F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8E15BF7793005E6F29 /* QuartzCore.framework */; };
+		1B175EB6169F1FA1004010F6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C9715BF77CE005E6F29 /* libxml2.dylib */; };
+		1B175EB7169F1FA1004010F6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C9815BF77CE005E6F29 /* libz.dylib */; };
+		1B175EB9169F1FA1004010F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41CD6C6815BF7673005E6F29 /* InfoPlist.strings */; };
+		1B175EBA169F1FA1004010F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CD6C6A15BF7673005E6F29 /* MainMenu.xib */; };
+		1B175EBB169F1FA1004010F6 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70AC15BF7CCE006A0A6C /* Icon.icns */; };
+		1B175EBC169F1FA1004010F6 /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3C163004980095A81C /* ipad */; };
+		1B175EBD169F1FA1004010F6 /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3D163004980095A81C /* ipadhd */; };
+		1B175EBE169F1FA1004010F6 /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = 1514DA3E163004980095A81C /* iphone */; };
 		41BC70AD15BF7CCE006A0A6C /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70AC15BF7CCE006A0A6C /* Icon.icns */; };
 		41CD6C6515BF7574005E6F29 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6315BF7574005E6F29 /* AppController.mm */; };
 		41CD6C6615BF7574005E6F29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6415BF7574005E6F29 /* main.m */; };
@@ -104,6 +123,8 @@
 		1B175E9C169F1F2E004010F6 /* SampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleTest.cpp; sourceTree = "<group>"; };
 		1B175E9D169F1F2E004010F6 /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRunnerScene.cpp; sourceTree = "<group>"; };
 		1B175E9E169F1F2E004010F6 /* TestRunnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunnerScene.h; sourceTree = "<group>"; };
+		1B175EC2169F1FA1004010F6 /* LevireTemplateTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplateTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B175EC4169F1FA2004010F6 /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LevireTemplateTests-Info.plist"; path = "/Users/kie/Projekte/MetaProject/MetaProject/project/proj.mac/LevireTemplateTests-Info.plist"; sourceTree = "<absolute>"; };
 		41BC70AC15BF7CCE006A0A6C /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		41CD6C5115BF748C005E6F29 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD6C6215BF7574005E6F29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -131,12 +152,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B175EAB169F1FA1004010F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B175EAC169F1FA1004010F6 /* libcocos2dx.a in Frameworks */,
+				1B175EAD169F1FA1004010F6 /* libgtest.a in Frameworks */,
+				1B175EAE169F1FA1004010F6 /* AppKit.framework in Frameworks */,
+				1B175EAF169F1FA1004010F6 /* AudioToolbox.framework in Frameworks */,
+				1B175EB0169F1FA1004010F6 /* Cocoa.framework in Frameworks */,
+				1B175EB1169F1FA1004010F6 /* CoreFoundation.framework in Frameworks */,
+				1B175EB2169F1FA1004010F6 /* Foundation.framework in Frameworks */,
+				1B175EB3169F1FA1004010F6 /* OpenAL.framework in Frameworks */,
+				1B175EB4169F1FA1004010F6 /* OpenGL.framework in Frameworks */,
+				1B175EB5169F1FA1004010F6 /* QuartzCore.framework in Frameworks */,
+				1B175EB6169F1FA1004010F6 /* libxml2.dylib in Frameworks */,
+				1B175EB7169F1FA1004010F6 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41851B8F15B93C32004083E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				797FBD15169B74F200B84994 /* libcocos2dx.a in Frameworks */,
-				1B175E98169F1EAD004010F6 /* libgtest.a in Frameworks */,
 				41CD6C8F15BF7793005E6F29 /* AppKit.framework in Frameworks */,
 				41CD6C9015BF7793005E6F29 /* AudioToolbox.framework in Frameworks */,
 				41CD6C9115BF7793005E6F29 /* Cocoa.framework in Frameworks */,
@@ -190,6 +229,7 @@
 				41CD6C5E15BF7514005E6F29 /* Frameworks */,
 				41CD6C5F15BF7522005E6F29 /* mac */,
 				41EFC1BB15BF7AC30083EA95 /* Products */,
+				1B175EC2169F1FA1004010F6 /* LevireTemplateTests.app */,
 				41CD6C6115BF7556005E6F29 /* Resources */,
 			);
 			sourceTree = "<group>";
@@ -226,6 +266,7 @@
 		41CD6C5F15BF7522005E6F29 /* mac */ = {
 			isa = PBXGroup;
 			children = (
+				1B175EC4169F1FA2004010F6 /* LevireTemplateTests-Info.plist */,
 				41CD6C6215BF7574005E6F29 /* AppController.h */,
 				41CD6C6315BF7574005E6F29 /* AppController.mm */,
 				41CD6C6415BF7574005E6F29 /* main.m */,
@@ -275,6 +316,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B175EA2169F1FA1004010F6 /* LevireTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B175EBF169F1FA1004010F6 /* Build configuration list for PBXNativeTarget "LevireTemplateTests" */;
+			buildPhases = (
+				1B175EA3169F1FA1004010F6 /* Sources */,
+				1B175EAB169F1FA1004010F6 /* Frameworks */,
+				1B175EB8169F1FA1004010F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LevireTemplateTests;
+			productName = Paralaxer;
+			productReference = 1B175EC2169F1FA1004010F6 /* LevireTemplateTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		41851B9115B93C32004083E9 /* LevireTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41851BB015B93C33004083E9 /* Build configuration list for PBXNativeTarget "LevireTemplate" */;
@@ -324,6 +382,7 @@
 			projectRoot = "";
 			targets = (
 				41851B9115B93C32004083E9 /* LevireTemplate */,
+				1B175EA2169F1FA1004010F6 /* LevireTemplateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +447,19 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B175EB8169F1FA1004010F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B175EB9169F1FA1004010F6 /* InfoPlist.strings in Resources */,
+				1B175EBA169F1FA1004010F6 /* MainMenu.xib in Resources */,
+				1B175EBB169F1FA1004010F6 /* Icon.icns in Resources */,
+				1B175EBC169F1FA1004010F6 /* ipad in Resources */,
+				1B175EBD169F1FA1004010F6 /* ipadhd in Resources */,
+				1B175EBE169F1FA1004010F6 /* iphone in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41851B9015B93C32004083E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +476,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B175EA3169F1FA1004010F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B175EA4169F1FA1004010F6 /* AppController.mm in Sources */,
+				1B175EA5169F1FA1004010F6 /* main.m in Sources */,
+				1B175EA8169F1FA1004010F6 /* AppDelegate.cpp in Sources */,
+				1B175EA9169F1FA1004010F6 /* SampleTest.cpp in Sources */,
+				1B175EAA169F1FA1004010F6 /* TestRunnerScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41851B8E15B93C32004083E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,9 +496,6 @@
 				41CD6C6615BF7574005E6F29 /* main.m in Sources */,
 				41CD6C7515BF76FB005E6F29 /* AppDelegate.cpp in Sources */,
 				41CD6C7615BF76FB005E6F29 /* HelloWorldScene.cpp in Sources */,
-				1B175E9F169F1F2E004010F6 /* AppDelegate.cpp in Sources */,
-				1B175EA0169F1F2E004010F6 /* SampleTest.cpp in Sources */,
-				1B175EA1169F1F2E004010F6 /* TestRunnerScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +521,77 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1B175EC0169F1FA1004010F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LevireTemplate_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_MAC,
+					"DEBUG=1",
+					USE_FILE32API,
+					"$(inherited)",
+				);
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2/\"",
+					"\"$(SRCROOT)/../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../cocos2dx\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
+					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../gtest/include",
+				);
+				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LevireTemplateTests;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B175EC1169F1FA1004010F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LevireTemplate_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					TARGET_OS_MAC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2/\"",
+					"\"$(SRCROOT)/../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../cocos2dx\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
+					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../gtest/include",
+				);
+				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LevireTemplateTests;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		41851BAE15B93C33004083E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -557,6 +709,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B175EBF169F1FA1004010F6 /* Build configuration list for PBXNativeTarget "LevireTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B175EC0169F1FA1004010F6 /* Debug */,
+				1B175EC1169F1FA1004010F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41851B8C15B93C32004083E9 /* Build configuration list for PBXProject "LevireTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
