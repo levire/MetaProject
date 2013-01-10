@@ -22,6 +22,7 @@ bool TestRunner::init()
         return false;
     }
     
+    this->testIt();
     this->scheduleUpdate();
     return true;
 }
