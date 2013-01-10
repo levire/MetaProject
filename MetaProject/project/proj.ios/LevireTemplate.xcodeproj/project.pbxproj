@@ -31,7 +31,6 @@
 		1B5906A4169E152800DC668C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF137426128A8E4600D9F789 /* QuartzCore.framework */; };
 		1B5906AC169E172200DC668C /* LevireTemplate-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */; };
 		1B5906B0169E199400DC668C /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B5906AE169E199400DC668C /* SampleTest.cpp */; };
-		1B59070A169E2A1F00DC668C /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5906FD169E29CE00DC668C /* libgtest.a */; };
 		1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */; };
 		1B590719169E352600DC668C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B590714169E352600DC668C /* AppDelegate.cpp */; };
 		1B59071A169E352600DC668C /* TestRunnerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B590717169E352600DC668C /* TestRunnerScene.cpp */; };
@@ -59,51 +58,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B5906FA169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E6D169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
 			remoteInfo = "gtest-framework";
 		};
-		1B5906FC169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E6F169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C848FA101A209C0083642A;
 			remoteInfo = "gtest-static";
 		};
-		1B5906FE169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E71169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C8490B101A217E0083642A;
 			remoteInfo = "gtest_main-static";
 		};
-		1B590700169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E73169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40899F430FFA7184000B29AE;
 			remoteInfo = "gtest_unittest-framework";
 		};
-		1B590702169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E75169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C84987101A36850083642A;
 			remoteInfo = "gtest_unittest-static";
 		};
-		1B590704169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E77169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
 			remoteInfo = "sample1_unittest-framework";
 		};
-		1B590706169E29CE00DC668C /* PBXContainerItemProxy */ = {
+		1B175E79169F1E32004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+			containerPortal = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C84997101A36A60083642A;
 			remoteInfo = "sample1_unittest-static";
@@ -126,7 +125,7 @@
 		1B5906AA169E152900DC668C /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LevireTemplateTests-Info.plist"; path = "/Users/kie/Projekte/MetaProject/MetaProject/project/proj.ios/LevireTemplateTests-Info.plist"; sourceTree = "<absolute>"; };
 		1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LevireTemplate-Info.plist"; sourceTree = "<group>"; };
 		1B5906AE169E199400DC668C /* SampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleTest.cpp; path = ../Tests/SampleTest.cpp; sourceTree = "<group>"; };
-		1B5906E7169E29CE00DC668C /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../gtest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "gtest-ios.xcodeproj"; path = "../../gtest/xcode/gtest-ios.xcodeproj"; sourceTree = "<group>"; };
 		1B590714169E352600DC668C /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Tests/AppDelegate.cpp; sourceTree = "<group>"; };
 		1B590715169E352600DC668C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Tests/AppDelegate.h; sourceTree = "<group>"; };
 		1B590717169E352600DC668C /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunnerScene.cpp; path = ../Tests/TestRunnerScene.cpp; sourceTree = "<group>"; };
@@ -167,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */,
-				1B59070A169E2A1F00DC668C /* libgtest.a in Frameworks */,
 				1B59069E169E152800DC668C /* Foundation.framework in Frameworks */,
 				1B59069F169E152800DC668C /* UIKit.framework in Frameworks */,
 				1B5906A0169E152800DC668C /* CoreGraphics.framework in Frameworks */,
@@ -205,6 +203,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1B175E62169F1E32004010F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B175E6E169F1E32004010F6 /* gtest.framework */,
+				1B175E70169F1E32004010F6 /* libgtest.a */,
+				1B175E72169F1E32004010F6 /* libgtest_main.a */,
+				1B175E74169F1E32004010F6 /* gtest_unittest-framework */,
+				1B175E76169F1E32004010F6 /* gtest_unittest */,
+				1B175E78169F1E32004010F6 /* sample1_unittest-framework */,
+				1B175E7A169F1E32004010F6 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1B5906AD169E18C900DC668C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,24 +229,10 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
-		1B5906E8169E29CE00DC668C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1B5906FB169E29CE00DC668C /* gtest.framework */,
-				1B5906FD169E29CE00DC668C /* libgtest.a */,
-				1B5906FF169E29CE00DC668C /* libgtest_main.a */,
-				1B590701169E29CE00DC668C /* gtest_unittest-framework */,
-				1B590703169E29CE00DC668C /* gtest_unittest */,
-				1B590705169E29CE00DC668C /* sample1_unittest-framework */,
-				1B590707169E29CE00DC668C /* sample1_unittest-static */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1B5906E7169E29CE00DC668C /* gtest.xcodeproj */,
+				1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */,
 				79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */,
 				BF23D4E2143315EB00657E08 /* Classes */,
 				1B5906AD169E18C900DC668C /* Tests */,
@@ -379,8 +377,8 @@
 					ProjectRef = 79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */;
 				},
 				{
-					ProductGroup = 1B5906E8169E29CE00DC668C /* Products */;
-					ProjectRef = 1B5906E7169E29CE00DC668C /* gtest.xcodeproj */;
+					ProductGroup = 1B175E62169F1E32004010F6 /* Products */;
+					ProjectRef = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -392,53 +390,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1B5906FB169E29CE00DC668C /* gtest.framework */ = {
+		1B175E6E169F1E32004010F6 /* gtest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = gtest.framework;
-			remoteRef = 1B5906FA169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E6D169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B5906FD169E29CE00DC668C /* libgtest.a */ = {
+		1B175E70169F1E32004010F6 /* libgtest.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest.a;
-			remoteRef = 1B5906FC169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E6F169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B5906FF169E29CE00DC668C /* libgtest_main.a */ = {
+		1B175E72169F1E32004010F6 /* libgtest_main.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest_main.a;
-			remoteRef = 1B5906FE169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E71169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B590701169E29CE00DC668C /* gtest_unittest-framework */ = {
+		1B175E74169F1E32004010F6 /* gtest_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "gtest_unittest-framework";
-			remoteRef = 1B590700169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E73169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B590703169E29CE00DC668C /* gtest_unittest */ = {
+		1B175E76169F1E32004010F6 /* gtest_unittest */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = gtest_unittest;
-			remoteRef = 1B590702169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E75169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B590705169E29CE00DC668C /* sample1_unittest-framework */ = {
+		1B175E78169F1E32004010F6 /* sample1_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-framework";
-			remoteRef = 1B590704169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E77169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B590707169E29CE00DC668C /* sample1_unittest-static */ = {
+		1B175E7A169F1E32004010F6 /* sample1_unittest-static */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-static";
-			remoteRef = 1B590706169E29CE00DC668C /* PBXContainerItemProxy */;
+			remoteRef = 1B175E79169F1E32004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */ = {
