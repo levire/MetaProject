@@ -23,3 +23,6 @@ MetaProject/project/proj.ios/LevireTemplate.xcodeproj/project.xcworkspace/xcuser
 MetaProject/gtest/xcode/gtest.xcodeproj/xcuserdata
 MetaProject/gtest/xcode/gtest.xcodeproj/project.xcworkspace/xcuserdata
 *.xcworkspacedata
+MetaProject/project/proj.android/assets
+MetaProject/project/proj.android/obj
+MetaProject/project/proj.android/libs/armeabi
