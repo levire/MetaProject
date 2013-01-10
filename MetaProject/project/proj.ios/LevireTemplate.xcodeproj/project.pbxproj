@@ -22,9 +22,6 @@
 		1B590695169E152800DC668C /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CF3681626CEFF00AFC938 /* ipadhd */; };
 		1B590697169E152800DC668C /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF365AA712A103F70050DCF4 /* AppController.mm */; };
 		1B590698169E152800DC668C /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF4DE6AC138BB89600CF907D /* RootViewController.mm */; };
-		1B590699169E152800DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
-		1B59069A169E152800DC668C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E3143315EB00657E08 /* AppDelegate.cpp */; };
-		1B59069B169E152800DC668C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
 		1B59069E169E152800DC668C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1B59069F169E152800DC668C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1B5906A0169E152800DC668C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -36,6 +33,12 @@
 		1B5906B0169E199400DC668C /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B5906AE169E199400DC668C /* SampleTest.cpp */; };
 		1B59070A169E2A1F00DC668C /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5906FD169E29CE00DC668C /* libgtest.a */; };
 		1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */; };
+		1B590719169E352600DC668C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B590714169E352600DC668C /* AppDelegate.cpp */; };
+		1B59071A169E352600DC668C /* TestRunnerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B590717169E352600DC668C /* TestRunnerScene.cpp */; };
+		1B59071B169E363D00DC668C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E3143315EB00657E08 /* AppDelegate.cpp */; };
+		1B59071C169E364200DC668C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
+		1B59071D169E394200DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
+		1B59071E169E397900DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -44,14 +47,11 @@
 		BF1373F0128A899500D9F789 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492C21128924A800A09262 /* libxml2.dylib */; };
 		BF1373F1128A899E00D9F789 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492B6912891AC600A09262 /* libz.dylib */; };
 		BF13742F128A8E6A00D9F789 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF137426128A8E4600D9F789 /* QuartzCore.framework */; };
-		BF23D4E7143315EB00657E08 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E3143315EB00657E08 /* AppDelegate.cpp */; };
-		BF23D4E8143315EB00657E08 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
 		BF365AA812A103F70050DCF4 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF365AA712A103F70050DCF4 /* AppController.mm */; };
 		BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF4DE6AC138BB89600CF907D /* RootViewController.mm */; };
 		D446FD79161028E9000ADA7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD78161028E9000ADA7B /* Default.png */; };
 		D446FD7B161028ED000ADA7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD7A161028ED000ADA7B /* Default@2x.png */; };
 		D446FD7D161028F4000ADA7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D446FD7C161028F4000ADA7B /* Default-568h@2x.png */; };
-		D4ABB4B313B4395300552E6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
 		D4EF94E815BD319200D803EB /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E715BD319200D803EB /* Icon-57.png */; };
 		D4EF94EA15BD319500D803EB /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E915BD319500D803EB /* Icon-114.png */; };
 		D4EF94EC15BD319B00D803EB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94EB15BD319B00D803EB /* Icon-72.png */; };
@@ -127,6 +127,10 @@
 		1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LevireTemplate-Info.plist"; sourceTree = "<group>"; };
 		1B5906AE169E199400DC668C /* SampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleTest.cpp; path = ../Tests/SampleTest.cpp; sourceTree = "<group>"; };
 		1B5906E7169E29CE00DC668C /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../gtest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		1B590714169E352600DC668C /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Tests/AppDelegate.cpp; sourceTree = "<group>"; };
+		1B590715169E352600DC668C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Tests/AppDelegate.h; sourceTree = "<group>"; };
+		1B590717169E352600DC668C /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunnerScene.cpp; path = ../Tests/TestRunnerScene.cpp; sourceTree = "<group>"; };
+		1B590718169E352600DC668C /* TestRunnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRunnerScene.h; path = ../Tests/TestRunnerScene.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -204,6 +208,10 @@
 		1B5906AD169E18C900DC668C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1B590714169E352600DC668C /* AppDelegate.cpp */,
+				1B590715169E352600DC668C /* AppDelegate.h */,
+				1B590717169E352600DC668C /* TestRunnerScene.cpp */,
+				1B590718169E352600DC668C /* TestRunnerScene.h */,
 				1B5906AE169E199400DC668C /* SampleTest.cpp */,
 			);
 			name = Tests;
@@ -487,10 +495,10 @@
 			files = (
 				1B590697169E152800DC668C /* AppController.mm in Sources */,
 				1B590698169E152800DC668C /* RootViewController.mm in Sources */,
-				1B590699169E152800DC668C /* main.m in Sources */,
-				1B59069A169E152800DC668C /* AppDelegate.cpp in Sources */,
-				1B59069B169E152800DC668C /* HelloWorldScene.cpp in Sources */,
 				1B5906B0169E199400DC668C /* SampleTest.cpp in Sources */,
+				1B590719169E352600DC668C /* AppDelegate.cpp in Sources */,
+				1B59071A169E352600DC668C /* TestRunnerScene.cpp in Sources */,
+				1B59071E169E397900DC668C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,9 +508,9 @@
 			files = (
 				BF365AA812A103F70050DCF4 /* AppController.mm in Sources */,
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
-				D4ABB4B313B4395300552E6E /* main.m in Sources */,
-				BF23D4E7143315EB00657E08 /* AppDelegate.cpp in Sources */,
-				BF23D4E8143315EB00657E08 /* HelloWorldScene.cpp in Sources */,
+				1B59071B169E363D00DC668C /* AppDelegate.cpp in Sources */,
+				1B59071C169E364200DC668C /* HelloWorldScene.cpp in Sources */,
+				1B59071D169E394200DC668C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
