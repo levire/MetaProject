@@ -142,6 +142,14 @@ THE SOFTWARE.
     #include "platform/android/CCStdC.h"
 #endif // CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_OUYA)
+    #include "platform/ouya/CCAccelerometer.h"
+    #include "platform/ouya/CCApplication.h"
+    #include "platform/ouya/CCEGLView.h"
+    #include "platform/ouya/CCGL.h"
+    #include "platform/ouya/CCStdC.h"
+#endif // CC_TARGET_PLATFORM == CC_PLATFORM_OUYA
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY)
     #include "platform/blackberry/CCAccelerometer.h"
     #include "platform/blackberry/CCApplication.h"
