@@ -19,5 +19,5 @@ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,ouya)
+$(call import-module,cocos2dx/platform/ouya)
 $(call import-module,extensions/ouya)
