@@ -1,7 +1,7 @@
 MetaProject
 ===========
 
-MetaProject is a starting point for multi-target (including ouya) cocos2d-x projects. MetaProject consists of Cocos2D-x 2.0-x-2.0.4, the ODK (OUYA Development Kit) 0.0.4 and a custom JNI layer to bind the Ouya Controller.
+MetaProject is a starting point for multi-target (including ouya) cocos2d-x projects. MetaProject consists of Cocos2D-x 2.0-x-2.0.4, the ODK (OUYA Development Kit) 0.0.5 and a custom JNI layer to bind the Ouya Controller.
 
 The project/Classes/HelloWorldScene.cpp has a little example how to use the CCOuyaController class, when deploying for OUYA.
 
