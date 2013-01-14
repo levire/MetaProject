@@ -17,6 +17,6 @@ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,android)
+$(call import-module,cocos2dx/platform/android)
 $(call import-module,extensions/android)
 
