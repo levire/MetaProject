@@ -93,7 +93,7 @@ extern "C"
         return false;
     }
     
-    float getAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef)
+    float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef)
     {
         JniMethodInfo methodInfo;
         
@@ -112,7 +112,7 @@ extern "C"
         }
         else
         {
-            CCLOG("Error Method: getAxisValue not available");
+            CCLOG("Error Method: getOuyaAxisValue not available");
         }
         return 0.0f;
     }
