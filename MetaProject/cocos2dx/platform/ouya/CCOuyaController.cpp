@@ -136,6 +136,11 @@ bool CCOuyaController::isButtonPressed(OuyaControllerButton button)
 	return isOuyaButtonPressed(button, this->jniLinkToOuyaController);
 }
 
+float CCOuyaController::getAxisValue(OuyaControllerAxis axis)
+{
+	return getOuyaAxisValue(axis, this->jniLinkToOuyaController);
+}
+
 void CCOuyaController::freeControllerCache()
 {
 	for (Listeners::iterator it = CCOuyaController::listeners.begin();

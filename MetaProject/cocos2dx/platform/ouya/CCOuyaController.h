@@ -49,6 +49,7 @@ public:
 	static void freeControllerCache();
 
 	bool isButtonPressed(OuyaControllerButton button);
+	float getAxisValue(OuyaControllerAxis axis);
 
 	virtual ~CCOuyaController();
 
