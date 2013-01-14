@@ -1,4 +1,4 @@
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := $(call my-dir)/..
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := cocos_extension_static
@@ -60,5 +60,5 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
                     
 include $(BUILD_STATIC_LIBRARY)
 
-$(call import-module,cocos2dx)
+$(call import-module,cocos2dx/platform/ouya)
 $(call import-module,cocos2dx/platform/third_party/android/prebuilt/libcurl)
