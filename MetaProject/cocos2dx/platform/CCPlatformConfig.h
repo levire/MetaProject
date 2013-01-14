@@ -55,10 +55,14 @@ Config of cocos2d-x project, per target platform.
     #define CC_SUPPORT_PVRTC
 #endif
 
-// android
-#if ! CC_TARGET_PLATFORM && defined(ANDROID)
+// android | ouya
+#if ! CC_TARGET_PLATFORM 
     #undef  CC_TARGET_PLATFORM
-    #define CC_TARGET_PLATFORM         CC_PLATFORM_ANDROID
+    #if defined(OUYA)
+        #define CC_TARGET_PLATFORM         CC_PLATFORM_OUYA
+    #elif defined(ANDROID)
+        #define CC_TARGET_PLATFORM         CC_PLATFORM_ANDROID
+    #endif
 #endif
 
 // win32
@@ -98,11 +102,6 @@ Config of cocos2d-x project, per target platform.
     //#define CC_SUPPORT_PVRTC
 #endif
 
-// mac
-#if ! CC_TARGET_PLATFORM && defined(OUYA)
-    #undef  CC_TARGET_PLATFORM
-    #define CC_TARGET_PLATFORM         CC_PLATFORM_OUYA
-#endif
 
 //////////////////////////////////////////////////////////////////////////
 // post configure
