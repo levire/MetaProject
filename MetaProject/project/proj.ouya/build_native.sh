@@ -39,41 +39,41 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ... use paths relative to current directory
 ROOT="$DIR/../.."
 APP_ROOT="$DIR/.."
-APP_ANDROID_ROOT="$DIR"
+APP_OUYA_ROOT="$DIR"
 
 echo "DIR = $DIR"
 echo "NDK_ROOT = $NDK_ROOT"
 echo "ROOT = $ROOT"
 echo "APP_ROOT = $APP_ROOT"
-echo "APP_ANDROID_ROOT = $APP_ANDROID_ROOT"
+echo "APP_OUYA_ROOT = $APP_ANDROID_ROOT"
 
 # make sure assets is exist
-if [ -d "$APP_ANDROID_ROOT"/assets ]; then
-    rm -rf "$APP_ANDROID_ROOT"/assets
+if [ -d "$APP_OUYA_ROOT"/assets ]; then
+    rm -rf "$APP_OUYA_ROOT"/assets
 fi
 
-mkdir "$APP_ANDROID_ROOT"/assets
+mkdir "$APP_OUYA_ROOT"/assets
 
 # copy resources
 for file in "$APP_ROOT"/Resources/*
 do
 if [ -d "$file" ]; then
-    cp -rf "$file" "$APP_ANDROID_ROOT"/assets
+    cp -rf "$file" "$APP_OUYA_ROOT"/assets
 fi
 
 if [ -f "$file" ]; then
-    cp "$file" "$APP_ANDROID_ROOT"/assets
+    cp "$file" "$APP_OUYA_ROOT"/assets
 fi
 done
 
 if [[ "$buildexternalsfromsource" ]]; then
     echo "Building external dependencies from source"
     set -x
-    "$NDK_ROOT"/ndk-build -C "$APP_ANDROID_ROOT" $* \
+    "$NDK_ROOT"/ndk-build -C "$APP_OUYA_ROOT" $* \
         "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/source"
 else
     echo "Using prebuilt externals"
     set -x
-    "$NDK_ROOT"/ndk-build -C "$APP_ANDROID_ROOT" $* \
+    "$NDK_ROOT"/ndk-build -C "$APP_OUYA_ROOT" $* \
         "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt"
 fi
