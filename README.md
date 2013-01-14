@@ -10,7 +10,7 @@ We will expand this template according to our work and the development of the us
 Rights
 ------
 
-All frameworks and the code are owned by their specific owners and destributed under their choosen license.
+All frameworks and the code are owned by their specific owners and distributed under their choosen license.
 
 How to start
 ------------
