@@ -496,7 +496,7 @@ bool isFileExists(const char* szFilePath)
 		|| (dwFileAttr&FILE_ATTRIBUTE_DIRECTORY))	{
 		return false;
 	}		
-#elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
+#elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_OUYA 
 	bool bFind = true;
 	do 
 	{
