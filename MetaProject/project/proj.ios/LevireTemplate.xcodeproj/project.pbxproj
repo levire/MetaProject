@@ -56,6 +56,7 @@
 		1B1761DD16A46265004010F6 /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1761A216A46265004010F6 /* CCTableViewCell.cpp */; };
 		1B1761DE16A46265004010F6 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1761A516A46265004010F6 /* HttpClient.cpp */; };
 		1B1761E616A46392004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1761E516A46392004010F6 /* libcurl.a */; };
+		1B1761FF16A465A6004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1761E516A46392004010F6 /* libcurl.a */; };
 		1B59068C169E152800DC668C /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E715BD319200D803EB /* Icon-57.png */; };
 		1B59068D169E152800DC668C /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E915BD319500D803EB /* Icon-114.png */; };
 		1B59068E169E152800DC668C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94EB15BD319B00D803EB /* Icon-72.png */; };
@@ -312,6 +313,7 @@
 			files = (
 				1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */,
 				1B175EDD169F20FB004010F6 /* libgtest.a in Frameworks */,
+				1B1761FF16A465A6004010F6 /* libcurl.a in Frameworks */,
 				1B59069E169E152800DC668C /* Foundation.framework in Frameworks */,
 				1B59069F169E152800DC668C /* UIKit.framework in Frameworks */,
 				1B5906A0169E152800DC668C /* CoreGraphics.framework in Frameworks */,
@@ -888,11 +890,16 @@
 					"\"$(SRCROOT)/../../cocos2dx\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
-					"$(SRCROOT)/../../external/chipmunk/include/chipmunk",
-					"$(SRCROOT)/../../gtest/include",
+					"\"$(SRCROOT)/../../external/chipmunk/include/chipmunk\"",
+					"\"$(SRCROOT)/../../gtest/include\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
@@ -928,11 +935,16 @@
 					"\"$(SRCROOT)/../../cocos2dx\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
-					"$(SRCROOT)/../../external/chipmunk/include/chipmunk",
-					"$(SRCROOT)/../../gtest/include",
+					"\"$(SRCROOT)/../../external/chipmunk/include/chipmunk\"",
+					"\"$(SRCROOT)/../../gtest/include\"",
+					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
