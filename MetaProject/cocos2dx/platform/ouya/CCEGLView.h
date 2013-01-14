@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
 
-#ifndef __CC_EGLVIEW_ANDROID_H__
-#define __CC_EGLVIEW_ANDROID_H__
+#ifndef __CC_EGLVIEW_OUYA_H__
+#define __CC_EGLVIEW_OUYA_H__
 
 #include "cocoa/CCGeometry.h"
 #include "platform/CCEGLViewProtocol.h"

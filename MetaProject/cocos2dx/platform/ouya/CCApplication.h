@@ -1,5 +1,5 @@
-#ifndef __CC_APPLICATION_ANDROID_H__
-#define __CC_APPLICATION_ANDROID_H__
+#ifndef __CC_APPLICATION_OUYA_H__
+#define __CC_APPLICATION_OUYA_H__
 
 #include "platform/CCCommon.h"
 #include "platform/CCApplicationProtocol.h"

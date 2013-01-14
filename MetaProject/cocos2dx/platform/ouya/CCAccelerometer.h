@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
 
-#ifndef __PLATFORM_ANDROID_CCACCELEROMETER_H__
-#define __PLATFORM_ANDROID_CCACCELEROMETER_H__
+#ifndef __PLATFORM_OUYA_CCACCELEROMETER_H__
+#define __PLATFORM_OUYA_CCACCELEROMETER_H__
 
 #include "platform/CCCommon.h"
 #include "platform/CCAccelerometerDelegate.h"
