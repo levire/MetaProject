@@ -73,14 +73,21 @@ if [ -f "$file" ]; then
 fi
 done
 
+if [[ "$buildtests" ]]; then
+    BUILD_TESTS="BUILD_TESTS=true"
+
+fi
+
 if [[ "$buildexternalsfromsource" ]]; then
     echo "Building external dependencies from source"
     set -x
     "$NDK_ROOT"/ndk-build -C "$APP_OUYA_ROOT" $* \
-        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/source"
+        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/source" \
+        "${BUILD_TESTS}"
 else
     echo "Using prebuilt externals"
     set -x
     "$NDK_ROOT"/ndk-build -C "$APP_OUYA_ROOT" $* \
-        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt"
+        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt" \
+        "${BUILD_TESTS}"
 fi
