@@ -75,7 +75,8 @@ done
 
 if [[ "$buildtests" ]]; then
     BUILD_TESTS="BUILD_TESTS=true"
-
+else
+    BUILD_TESTS="BUILD_TESTS=false"
 fi
 
 if [[ "$buildexternalsfromsource" ]]; then
