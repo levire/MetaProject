@@ -17,7 +17,15 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 
+ifeq ($(BUILD_TESTS), true)
+	LOCAL_WHOLE_STATIC_LIBRARIES += gtest_static
+endif
+
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,cocos2dx/platform/ouya)
 $(call import-module,extensions/ouya)
+
+ifeq ($(BUILD_TESTS), true)
+    $(call import-module,gtest)
+endif
