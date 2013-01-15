@@ -3,6 +3,7 @@ APPNAME="HelloCpp"
 # options
 
 buildexternalsfromsource=
+buildtests=
 
 usage(){
 cat << EOF
@@ -12,14 +13,20 @@ Build C/C++ code for $APPNAME using Android NDK
 
 OPTIONS:
 -s	Build externals from source
+-t  Build tests
 -h	this help
 EOF
 }
 
-while getopts "sh" OPTION; do
+while getopts "sth" OPTION; do
 case "$OPTION" in
 s)
 buildexternalsfromsource=1
+;;
+t)
+buildtests=1
+echo $*
+shift
 ;;
 h)
 usage
