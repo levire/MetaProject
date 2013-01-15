@@ -19,3 +19,7 @@ ccclean:
 	rm -rf ../../cocos2dx/platform/ouya/java/bin/*
 	rm -rf ../../cocos2dx/platform/ouya/java/gen/
 
+tests:
+	./build_native.sh -t
+	pwd
+	ant -Dsdk.dir=$(ADK_ROOT) debug
