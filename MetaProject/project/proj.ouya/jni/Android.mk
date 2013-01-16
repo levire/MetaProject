@@ -17,7 +17,8 @@ TEST_SRC_FILES := \
     hellocpp/main.cpp \
     ../../Tests/AppDelegate.cpp \
     ../../Tests/TestRunnerScene.cpp \
-    ../../Tests/SampleTest.cpp
+    ../../Tests/SampleTest.cpp \
+    ../../Tests/CocosUnitTestResultPrinter.cpp
 
 ifeq ($(BUILD_TESTS), true)
     LOCAL_SRC_FILES := $(TEST_SRC_FILES)
