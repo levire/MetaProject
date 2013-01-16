@@ -18,9 +18,10 @@ How to start
 ------------
 
 1. Checkout this repository
-2. Place your code under project/Classes
-3. Compile the code using the apropriate proj.* folder
-4. Change the product and class names as you wish for the specific platforms
+2. Place your code under project/Classes and your unit tests under project/Tests
+3. Enter your new files in the Android.mk in the Classes and Tests folder
+4. Compile the code using the apropriate proj.* folder
+5. Change the product and class names as you wish for the specific platforms
 
 Contact us
 ----------
