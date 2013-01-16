@@ -51,7 +51,7 @@ APP_OUYA_ROOT="$DIR"
 echo "NDK_ROOT = $NDK_ROOT"
 echo "ROOT = $ROOT"
 echo "APP_ROOT = $APP_ROOT"
-echo "APP_OUYA_ROOT = $APP_ANDROID_ROOT"
+echo "APP_OUYA_ROOT = $APP_OUYA_ROOT"
 
 # make sure assets is exist
 if [ -d "$APP_OUYA_ROOT"/assets ]; then
