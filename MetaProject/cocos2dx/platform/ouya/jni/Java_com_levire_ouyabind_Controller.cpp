@@ -104,9 +104,9 @@ extern "C"
         
         if (isMethodAvailable)
         {
-            float axisValue = methodInfo.env->CallBooleanMethod(ouyaControllerGlobalRef,
-                                                                   methodInfo.methodID,
-                                                                   controllerAxis);
+            float axisValue = methodInfo.env->CallFloatMethod(ouyaControllerGlobalRef,
+                                                              methodInfo.methodID,
+                                                              controllerAxis);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
             return axisValue;
         }
