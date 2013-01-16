@@ -1,6 +1,5 @@
 all:
 	./build_native.sh
-	pwd
 	ant -Dsdk.dir=$(ADK_ROOT) debug
 
 run:
@@ -21,5 +20,4 @@ ccclean:
 
 tests:
 	./build_native.sh -t
-	pwd
 	ant -Dsdk.dir=$(ADK_ROOT) debug
