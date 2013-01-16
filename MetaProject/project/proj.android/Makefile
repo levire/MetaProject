@@ -18,3 +18,6 @@ ccclean:
 	rm -rf ../../../cocos2dx/platform/android/java/bin/*
 	rm -rf ../../../cocos2dx/platform/android/java/gen/
 
+tests:
+	./build_native.sh -t
+	ant -Dsdk.dir=$(ADK_ROOT) debug

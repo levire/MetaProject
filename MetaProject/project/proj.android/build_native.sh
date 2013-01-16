@@ -3,6 +3,7 @@ APPNAME="HelloCpp"
 # options
 
 buildexternalsfromsource=
+buildtests=
 
 usage(){
 cat << EOF
@@ -12,14 +13,20 @@ Build C/C++ code for $APPNAME using Android NDK
 
 OPTIONS:
 -s	Build externals from source
+-t  Build tests
 -h	this help
 EOF
 }
 
-while getopts "sh" OPTION; do
+while getopts "sth" OPTION; do
 case "$OPTION" in
 s)
 buildexternalsfromsource=1
+;;
+t)
+buildtests=1
+echo $*
+shift
 ;;
 h)
 usage
@@ -65,14 +72,22 @@ if [ -f "$file" ]; then
 fi
 done
 
+if [[ "$buildtests" ]]; then
+    BUILD_TESTS="BUILD_TESTS=true"
+else
+    BUILD_TESTS="BUILD_TESTS=false"
+fi
+
 if [[ "$buildexternalsfromsource" ]]; then
     echo "Building external dependencies from source"
     set -x
     "$NDK_ROOT"/ndk-build -C "$APP_ANDROID_ROOT" $* \
-        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/source"
+        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/source" \
+        "${BUILD_TESTS}"
 else
     echo "Using prebuilt externals"
     set -x
     "$NDK_ROOT"/ndk-build -C "$APP_ANDROID_ROOT" $* \
-        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt"
+        "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt" \
+        "${BUILD_TESTS}"
 fi
