@@ -8,23 +8,13 @@ LOCAL_MODULE_FILENAME := libhellocpp
 
 LOCAL_CFLAGS +=  -DOUYA=1 -DCOCOS2D_DEBUG=1
 
-NORMAL_SRC_FILES := \
-    hellocpp/main.cpp \
-    ../../Classes/AppDelegate.cpp \
-    ../../Classes/HelloWorldScene.cpp
-
-TEST_SRC_FILES := \
-    hellocpp/main.cpp \
-    ../../Tests/AppDelegate.cpp \
-    ../../Tests/TestRunnerScene.cpp \
-    ../../Tests/SampleTest.cpp \
-    ../../Tests/CocosUnitTestResultPrinter.cpp
-
 ifeq ($(BUILD_TESTS), true)
-    LOCAL_SRC_FILES := $(TEST_SRC_FILES)
-else    
-    LOCAL_SRC_FILES := $(NORMAL_SRC_FILES)
+    include $(LOCAL_PATH)/../../Tests/Android.mk
+else
+    include $(LOCAL_PATH)/../../Classes/Android.mk    
 endif                  
+
+LOCAL_SRC_FILES += hellocpp/main.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
