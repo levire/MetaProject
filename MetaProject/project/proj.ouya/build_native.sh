@@ -48,7 +48,6 @@ ROOT="$DIR/../.."
 APP_ROOT="$DIR/.."
 APP_OUYA_ROOT="$DIR"
 
-echo "DIR = $DIR"
 echo "NDK_ROOT = $NDK_ROOT"
 echo "ROOT = $ROOT"
 echo "APP_ROOT = $APP_ROOT"
