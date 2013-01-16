@@ -57,6 +57,7 @@
 		1B1761DE16A46265004010F6 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1761A516A46265004010F6 /* HttpClient.cpp */; };
 		1B1761E616A46392004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1761E516A46392004010F6 /* libcurl.a */; };
 		1B1761FF16A465A6004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1761E516A46392004010F6 /* libcurl.a */; };
+		1B1762E416A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1762E216A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp */; };
 		1B59068C169E152800DC668C /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E715BD319200D803EB /* Icon-57.png */; };
 		1B59068D169E152800DC668C /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94E915BD319500D803EB /* Icon-114.png */; };
 		1B59068E169E152800DC668C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EF94EB15BD319B00D803EB /* Icon-72.png */; };
@@ -267,6 +268,8 @@
 		1B1761A716A46265004010F6 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		1B1761A816A46265004010F6 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
 		1B1761E516A46392004010F6 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		1B1762E216A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CocosUnitTestResultPrinter.cpp; path = ../Tests/CocosUnitTestResultPrinter.cpp; sourceTree = "<group>"; };
+		1B1762E316A72E2E004010F6 /* CocosUnitTestResultPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosUnitTestResultPrinter.h; path = ../Tests/CocosUnitTestResultPrinter.h; sourceTree = "<group>"; };
 		1B5906A8169E152800DC668C /* LevireTemplateTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplateTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5906AA169E152900DC668C /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LevireTemplateTests-Info.plist"; path = "/Users/kie/Projekte/MetaProject/MetaProject/project/proj.ios/LevireTemplateTests-Info.plist"; sourceTree = "<absolute>"; };
 		1B5906AB169E172200DC668C /* LevireTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LevireTemplate-Info.plist"; sourceTree = "<group>"; };
@@ -528,6 +531,8 @@
 				1B590717169E352600DC668C /* TestRunnerScene.cpp */,
 				1B590718169E352600DC668C /* TestRunnerScene.h */,
 				1B5906AE169E199400DC668C /* SampleTest.cpp */,
+				1B1762E216A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp */,
+				1B1762E316A72E2E004010F6 /* CocosUnitTestResultPrinter.h */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -802,6 +807,7 @@
 				1B590719169E352600DC668C /* AppDelegate.cpp in Sources */,
 				1B59071A169E352600DC668C /* TestRunnerScene.cpp in Sources */,
 				1B59071E169E397900DC668C /* main.m in Sources */,
+				1B1762E416A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

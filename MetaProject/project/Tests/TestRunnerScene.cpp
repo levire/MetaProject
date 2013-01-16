@@ -1,5 +1,6 @@
 #include "TestRunnerScene.h"
 #include "AppMacros.h"
+#include "CocosUnitTestResultPrinter.h"
 
 #include <gtest/gtest.h>
 
@@ -39,6 +40,15 @@ void TestRunner::initTestingFramework()
     int argc = 1;
     const char* argv = "TestRunner";
     testing::InitGoogleTest(&argc, const_cast<char**>(&argv));
+    
+    // Gets hold of the event listener list.
+    ::testing::TestEventListeners& listeners = ::testing::UnitTest::GetInstance()->listeners();
+    
+    // Delete default printer
+    delete listeners.Release(listeners.default_result_printer());
+    
+    // Adds a listener to the end.  Google Test takes the ownership.
+    listeners.Append(new testing::CocosUnitTestResultPrinter());
 }
 
 void TestRunner::runTests()
