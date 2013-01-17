@@ -16,7 +16,6 @@
 		1B175EA9169F1FA1004010F6 /* SampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9C169F1F2E004010F6 /* SampleTest.cpp */; };
 		1B175EAA169F1FA1004010F6 /* TestRunnerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B175E9D169F1F2E004010F6 /* TestRunnerScene.cpp */; };
 		1B175EAC169F1FA1004010F6 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 797FBD14169B74E200B84994 /* libcocos2dx.a */; };
-		1B175EAD169F1FA1004010F6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B175E8D169F1EA0004010F6 /* libgtest.a */; };
 		1B175EAE169F1FA1004010F6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8715BF7793005E6F29 /* AppKit.framework */; };
 		1B175EAF169F1FA1004010F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8815BF7793005E6F29 /* AudioToolbox.framework */; };
 		1B175EB0169F1FA1004010F6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD6C8915BF7793005E6F29 /* Cocoa.framework */; };
@@ -76,6 +75,8 @@
 		1B1762BD16A4677B004010F6 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B17628416A4677B004010F6 /* HttpClient.cpp */; };
 		1B1762C516A46885004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1762C416A46885004010F6 /* libcurl.a */; };
 		1B1762C616A468B9004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1762C416A46885004010F6 /* libcurl.a */; };
+		1B17633916A842F8004010F6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B17632E16A842B3004010F6 /* libgtest.a */; };
+		1B17633D16A84352004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */; };
 		41BC70AD15BF7CCE006A0A6C /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70AC15BF7CCE006A0A6C /* Icon.icns */; };
 		41CD6C6515BF7574005E6F29 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6315BF7574005E6F29 /* AppController.mm */; };
 		41CD6C6615BF7574005E6F29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6415BF7574005E6F29 /* main.m */; };
@@ -97,49 +98,49 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B175E8A169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17632B16A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
 			remoteInfo = "gtest-framework";
 		};
-		1B175E8C169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17632D16A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C848FA101A209C0083642A;
 			remoteInfo = "gtest-static";
 		};
-		1B175E8E169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17632F16A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C8490B101A217E0083642A;
 			remoteInfo = "gtest_main-static";
 		};
-		1B175E90169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17633116A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40899F430FFA7184000B29AE;
 			remoteInfo = "gtest_unittest-framework";
 		};
-		1B175E92169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17633316A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C84987101A36850083642A;
 			remoteInfo = "gtest_unittest-static";
 		};
-		1B175E94169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17633516A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
 			remoteInfo = "sample1_unittest-framework";
 		};
-		1B175E96169F1EA0004010F6 /* PBXContainerItemProxy */ = {
+		1B17633716A842B3004010F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 			proxyType = 2;
@@ -160,7 +161,7 @@
 		1514DA3D163004980095A81C /* ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ipadhd; path = ../Resources/ipadhd; sourceTree = "<group>"; };
 		1514DA3E163004980095A81C /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iphone; path = ../Resources/iphone; sourceTree = "<group>"; };
 		15A6969B1630E63B00D7A229 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/AppMacros.h; sourceTree = "<group>"; };
-		1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "gtest-mac.xcodeproj"; path = "../../gtest/xcode/gtest-mac.xcodeproj"; sourceTree = "<group>"; };
+		1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "gtest-mac.xcodeproj"; path = "../../gmock/gtest/xcode/gtest-mac.xcodeproj"; sourceTree = "<group>"; };
 		1B175E9A169F1F2E004010F6 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		1B175E9B169F1F2E004010F6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B175E9C169F1F2E004010F6 /* SampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleTest.cpp; sourceTree = "<group>"; };
@@ -260,6 +261,8 @@
 		1B17628616A4677B004010F6 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		1B17628716A4677B004010F6 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
 		1B1762C416A46885004010F6 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CocosUnitTestResultPrinter.cpp; path = ../Tests/CocosUnitTestResultPrinter.cpp; sourceTree = "<group>"; };
+		1B17633B16A8433C004010F6 /* CocosUnitTestResultPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosUnitTestResultPrinter.h; path = ../Tests/CocosUnitTestResultPrinter.h; sourceTree = "<group>"; };
 		41BC70AC15BF7CCE006A0A6C /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		41CD6C5115BF748C005E6F29 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD6C6215BF7574005E6F29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -292,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B175EAC169F1FA1004010F6 /* libcocos2dx.a in Frameworks */,
-				1B175EAD169F1FA1004010F6 /* libgtest.a in Frameworks */,
+				1B17633916A842F8004010F6 /* libgtest.a in Frameworks */,
 				1B1762C616A468B9004010F6 /* libcurl.a in Frameworks */,
 				1B175EAE169F1FA1004010F6 /* AppKit.framework in Frameworks */,
 				1B175EAF169F1FA1004010F6 /* AudioToolbox.framework in Frameworks */,
@@ -329,20 +332,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B175E7C169F1EA0004010F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1B175E8B169F1EA0004010F6 /* gtest.framework */,
-				1B175E8D169F1EA0004010F6 /* libgtest.a */,
-				1B175E8F169F1EA0004010F6 /* libgtest_main.a */,
-				1B175E91169F1EA0004010F6 /* gtest_unittest-framework */,
-				1B175E93169F1EA0004010F6 /* gtest_unittest */,
-				1B175E95169F1EA0004010F6 /* sample1_unittest-framework */,
-				1B175E97169F1EA0004010F6 /* sample1_unittest-static */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1B175E99169F1F2E004010F6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +484,20 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		1B17632016A842B3004010F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B17632C16A842B3004010F6 /* gtest.framework */,
+				1B17632E16A842B3004010F6 /* libgtest.a */,
+				1B17633016A842B3004010F6 /* libgtest_main.a */,
+				1B17633216A842B3004010F6 /* gtest_unittest-framework */,
+				1B17633416A842B3004010F6 /* gtest_unittest */,
+				1B17633616A842B3004010F6 /* sample1_unittest-framework */,
+				1B17633816A842B3004010F6 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		41851B8715B93C32004083E9 = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +517,8 @@
 		41CD6C5D15BF750B005E6F29 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */,
+				1B17633B16A8433C004010F6 /* CocosUnitTestResultPrinter.h */,
 				15A6969B1630E63B00D7A229 /* AppMacros.h */,
 				41CD6C7115BF76FB005E6F29 /* AppDelegate.cpp */,
 				41CD6C7215BF76FB005E6F29 /* AppDelegate.h */,
@@ -653,7 +658,7 @@
 					ProjectRef = 797FBD0C169B74E100B84994 /* cocos2dx.xcodeproj */;
 				},
 				{
-					ProductGroup = 1B175E7C169F1EA0004010F6 /* Products */;
+					ProductGroup = 1B17632016A842B3004010F6 /* Products */;
 					ProjectRef = 1B175E7B169F1EA0004010F6 /* gtest-mac.xcodeproj */;
 				},
 			);
@@ -666,53 +671,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1B175E8B169F1EA0004010F6 /* gtest.framework */ = {
+		1B17632C16A842B3004010F6 /* gtest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = gtest.framework;
-			remoteRef = 1B175E8A169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17632B16A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E8D169F1EA0004010F6 /* libgtest.a */ = {
+		1B17632E16A842B3004010F6 /* libgtest.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest.a;
-			remoteRef = 1B175E8C169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17632D16A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E8F169F1EA0004010F6 /* libgtest_main.a */ = {
+		1B17633016A842B3004010F6 /* libgtest_main.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest_main.a;
-			remoteRef = 1B175E8E169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17632F16A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E91169F1EA0004010F6 /* gtest_unittest-framework */ = {
+		1B17633216A842B3004010F6 /* gtest_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "gtest_unittest-framework";
-			remoteRef = 1B175E90169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17633116A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E93169F1EA0004010F6 /* gtest_unittest */ = {
+		1B17633416A842B3004010F6 /* gtest_unittest */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = gtest_unittest;
-			remoteRef = 1B175E92169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17633316A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E95169F1EA0004010F6 /* sample1_unittest-framework */ = {
+		1B17633616A842B3004010F6 /* sample1_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-framework";
-			remoteRef = 1B175E94169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17633516A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1B175E97169F1EA0004010F6 /* sample1_unittest-static */ = {
+		1B17633816A842B3004010F6 /* sample1_unittest-static */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-static";
-			remoteRef = 1B175E96169F1EA0004010F6 /* PBXContainerItemProxy */;
+			remoteRef = 1B17633716A842B3004010F6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		797FBD14169B74E200B84994 /* libcocos2dx.a */ = {
@@ -763,6 +768,7 @@
 				1B175EA8169F1FA1004010F6 /* AppDelegate.cpp in Sources */,
 				1B175EA9169F1FA1004010F6 /* SampleTest.cpp in Sources */,
 				1B175EAA169F1FA1004010F6 /* TestRunnerScene.cpp in Sources */,
+				1B17633D16A84352004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
