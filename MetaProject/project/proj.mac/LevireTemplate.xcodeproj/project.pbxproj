@@ -870,7 +870,7 @@
 					"\"$(SRCROOT)/../../cocos2dx\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
-					"\"$(SRCROOT)/../../gtest/include\"",
+					"\"$(SRCROOT)/../../gmock/gtest/include\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
@@ -909,7 +909,7 @@
 					"\"$(SRCROOT)/../../cocos2dx\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/mac\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
-					"\"$(SRCROOT)/../../gtest/include\"",
+					"\"$(SRCROOT)/../../gmock/gtest/include\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
 				INFOPLIST_FILE = "LevireTemplateTests-Info.plist";
