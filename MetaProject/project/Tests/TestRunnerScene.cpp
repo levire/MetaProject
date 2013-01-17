@@ -3,6 +3,7 @@
 #include "CocosUnitTestResultPrinter.h"
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
 USING_NS_CC;
 
@@ -40,6 +41,7 @@ void TestRunner::initTestingFramework()
     int argc = 1;
     const char* argv = "TestRunner";
     testing::InitGoogleTest(&argc, const_cast<char**>(&argv));
+    testing::InitGoogleMock(&argc, const_cast<char**>(&argv));
     
     // Gets hold of the event listener list.
     ::testing::TestEventListeners& listeners = ::testing::UnitTest::GetInstance()->listeners();
