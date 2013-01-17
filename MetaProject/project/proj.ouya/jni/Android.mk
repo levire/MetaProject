@@ -31,5 +31,5 @@ $(call import-module,cocos2dx/platform/ouya)
 $(call import-module,extensions/ouya)
 
 ifeq ($(BUILD_TESTS), true)
-    $(call import-module,gtest)
+    $(call import-module,gmock/gtest)
 endif
