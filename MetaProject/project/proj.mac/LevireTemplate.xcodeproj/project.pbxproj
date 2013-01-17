@@ -77,6 +77,8 @@
 		1B1762C616A468B9004010F6 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1762C416A46885004010F6 /* libcurl.a */; };
 		1B17633916A842F8004010F6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B17632E16A842B3004010F6 /* libgtest.a */; };
 		1B17633D16A84352004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */; };
+		1BD173AF16A8608E002AA803 /* MockSampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD173AC16A8608E002AA803 /* MockSampleTest.cpp */; };
+		1BD173B016A8608E002AA803 /* SampleToMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD173AD16A8608E002AA803 /* SampleToMock.cpp */; };
 		41BC70AD15BF7CCE006A0A6C /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70AC15BF7CCE006A0A6C /* Icon.icns */; };
 		41CD6C6515BF7574005E6F29 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6315BF7574005E6F29 /* AppController.mm */; };
 		41CD6C6615BF7574005E6F29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD6C6415BF7574005E6F29 /* main.m */; };
@@ -263,6 +265,9 @@
 		1B1762C416A46885004010F6 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosUnitTestResultPrinter.cpp; sourceTree = "<group>"; };
 		1B17633B16A8433C004010F6 /* CocosUnitTestResultPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosUnitTestResultPrinter.h; sourceTree = "<group>"; };
+		1BD173AC16A8608E002AA803 /* MockSampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MockSampleTest.cpp; sourceTree = "<group>"; };
+		1BD173AD16A8608E002AA803 /* SampleToMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleToMock.cpp; sourceTree = "<group>"; };
+		1BD173AE16A8608E002AA803 /* SampleToMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleToMock.h; sourceTree = "<group>"; };
 		41BC70AC15BF7CCE006A0A6C /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		41CD6C5115BF748C005E6F29 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CD6C6215BF7574005E6F29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -335,6 +340,9 @@
 		1B175E99169F1F2E004010F6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1BD173AC16A8608E002AA803 /* MockSampleTest.cpp */,
+				1BD173AD16A8608E002AA803 /* SampleToMock.cpp */,
+				1BD173AE16A8608E002AA803 /* SampleToMock.h */,
 				1B17633A16A8433C004010F6 /* CocosUnitTestResultPrinter.cpp */,
 				1B17633B16A8433C004010F6 /* CocosUnitTestResultPrinter.h */,
 				1B175E9A169F1F2E004010F6 /* AppDelegate.cpp */,
@@ -821,6 +829,8 @@
 				1B1762BB16A4677B004010F6 /* CCTableView.cpp in Sources */,
 				1B1762BC16A4677B004010F6 /* CCTableViewCell.cpp in Sources */,
 				1B1762BD16A4677B004010F6 /* HttpClient.cpp in Sources */,
+				1BD173AF16A8608E002AA803 /* MockSampleTest.cpp in Sources */,
+				1BD173B016A8608E002AA803 /* SampleToMock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

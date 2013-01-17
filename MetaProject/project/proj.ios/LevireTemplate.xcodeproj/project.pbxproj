@@ -86,6 +86,8 @@
 		1B59071C169E364200DC668C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
 		1B59071D169E394200DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
 		1B59071E169E397900DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
+		1BD1738E16A85FCA002AA803 /* MockSampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */; };
+		1BD1738F16A85FCA002AA803 /* SampleToMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -279,6 +281,9 @@
 		1B590715169E352600DC668C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Tests/AppDelegate.h; sourceTree = "<group>"; };
 		1B590717169E352600DC668C /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunnerScene.cpp; path = ../Tests/TestRunnerScene.cpp; sourceTree = "<group>"; };
 		1B590718169E352600DC668C /* TestRunnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRunnerScene.h; path = ../Tests/TestRunnerScene.h; sourceTree = "<group>"; };
+		1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MockSampleTest.cpp; path = ../Tests/MockSampleTest.cpp; sourceTree = "<group>"; };
+		1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleToMock.cpp; path = ../Tests/SampleToMock.cpp; sourceTree = "<group>"; };
+		1BD1738D16A85FCA002AA803 /* SampleToMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleToMock.h; path = ../Tests/SampleToMock.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* LevireTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -526,6 +531,9 @@
 		1B5906AD169E18C900DC668C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */,
+				1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */,
+				1BD1738D16A85FCA002AA803 /* SampleToMock.h */,
 				1B590714169E352600DC668C /* AppDelegate.cpp */,
 				1B590715169E352600DC668C /* AppDelegate.h */,
 				1B590717169E352600DC668C /* TestRunnerScene.cpp */,
@@ -808,6 +816,8 @@
 				1B59071A169E352600DC668C /* TestRunnerScene.cpp in Sources */,
 				1B59071E169E397900DC668C /* main.m in Sources */,
 				1B1762E416A72E2E004010F6 /* CocosUnitTestResultPrinter.cpp in Sources */,
+				1BD1738E16A85FCA002AA803 /* MockSampleTest.cpp in Sources */,
+				1BD1738F16A85FCA002AA803 /* SampleToMock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

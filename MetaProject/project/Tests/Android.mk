@@ -3,4 +3,5 @@ LOCAL_SRC_FILES := \
     ../../Tests/TestRunnerScene.cpp \
     ../../Tests/SampleTest.cpp \
     ../../Tests/CocosUnitTestResultPrinter.cpp \
-    ../../Tests/SampleToMock.cpp
+    ../../Tests/SampleToMock.cpp \
+    ../../Tests/MockSampleTest.cpp
