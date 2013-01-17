@@ -580,8 +580,9 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "gtest" */;
+			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "gtest-mac" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -975,6 +976,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF10E30E07400294801 /* DebugProject.xcconfig */;
 			buildSettings = {
+				GCC_VERSION = "";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -982,6 +985,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF40E30E07400294801 /* ReleaseProject.xcconfig */;
 			buildSettings = {
+				GCC_VERSION = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1069,7 +1074,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "gtest" */ = {
+		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "gtest-mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FADC24708B4156D00ABE55E /* Debug */,
