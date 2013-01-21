@@ -50,13 +50,14 @@ TEST_F(MockSampleFixture, TestUnmockedClass)
 	EXPECT_EQ(3, unmockedClass->add(1,2));
 }
 
-using ::testing::AtLeast;
+using ::testing::Return;
 TEST_F(MockSampleFixture, TestMockedClass) 
 {
 	// Expected to be called once.
-	EXPECT_CALL(mockedClass, add(1,2))
-      .Times(AtLeast(1));
+	EXPECT_CALL(*mockedClass, add(1,2))
+      .Times(1)
+      .WillRepeatedly(Return(3));
 	
 	// Call once!
-	mockedClass->add(1,2);
+	EXPECT_EQ(3, mockedClass->add(1,2));
 }
