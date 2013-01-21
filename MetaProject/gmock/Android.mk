@@ -12,5 +12,9 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/include
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/gmock/internal \
                     $(LOCAL_PATH)/include
-                
+
+LOCAL_WHOLE_STATIC_LIBRARIES += gtest_static                
+
 include $(BUILD_STATIC_LIBRARY)
+
+$(call import-module,gmock/gtest)
