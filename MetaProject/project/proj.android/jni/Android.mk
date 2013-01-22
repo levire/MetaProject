@@ -19,6 +19,7 @@ LOCAL_SRC_FILES += hellocpp/main.cpp
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_WHOLE_STATIC_LIBRARIES := cocosdenshion_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_extension_static
 LOCAL_WHOLE_STATIC_LIBRARIES += box2d_static
 LOCAL_WHOLE_STATIC_LIBRARIES += chipmunk_static
@@ -31,6 +32,7 @@ endif
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,cocos2dx/platform/android)
+$(call import-module,CocosDenshion/android)
 $(call import-module,extensions/android)
 $(call import-module,external/Box2D)
 $(call import-module,external/chipmunk)
