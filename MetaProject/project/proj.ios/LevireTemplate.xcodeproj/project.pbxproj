@@ -235,6 +235,22 @@
 		1B80826716AEE122007D919C /* b2RopeJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B80814C16AEDF71007D919C /* b2RopeJoint.cpp */; };
 		1B80826816AEE122007D919C /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B80814E16AEDF71007D919C /* b2WeldJoint.cpp */; };
 		1B80826916AEE122007D919C /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B80815016AEDF71007D919C /* b2WheelJoint.cpp */; };
+		1B80857716AEE926007D919C /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80850E16AEE925007D919C /* CDAudioManager.m */; };
+		1B80857816AEE926007D919C /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80850E16AEE925007D919C /* CDAudioManager.m */; };
+		1B80857916AEE926007D919C /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851116AEE925007D919C /* CDOpenALSupport.m */; };
+		1B80857A16AEE926007D919C /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851116AEE925007D919C /* CDOpenALSupport.m */; };
+		1B80857B16AEE926007D919C /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851316AEE925007D919C /* CocosDenshion.m */; };
+		1B80857C16AEE926007D919C /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851316AEE925007D919C /* CocosDenshion.m */; };
+		1B80857D16AEE926007D919C /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851416AEE925007D919C /* SimpleAudioEngine.mm */; };
+		1B80857E16AEE926007D919C /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851416AEE925007D919C /* SimpleAudioEngine.mm */; };
+		1B80857F16AEE926007D919C /* SimpleAudioEngine_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851616AEE925007D919C /* SimpleAudioEngine_objc.m */; };
+		1B80858016AEE926007D919C /* SimpleAudioEngine_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80851616AEE925007D919C /* SimpleAudioEngine_objc.m */; };
+		1B8085C216AEE99F007D919C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B31547F06B00633F88 /* AudioToolbox.framework */; };
+		1B8085CA16AEEA74007D919C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B11547F06B00633F88 /* OpenAL.framework */; };
+		1B8085CB16AEEAB3007D919C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B31547F06B00633F88 /* AudioToolbox.framework */; };
+		1B8085CC16AEEACD007D919C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B51547F06B00633F88 /* AVFoundation.framework */; };
+		1B8085CD16AEEADD007D919C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B11547F06B00633F88 /* OpenAL.framework */; };
+		1B8085CE16AEEADD007D919C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781C33B51547F06B00633F88 /* AVFoundation.framework */; };
 		1BD1738E16A85FCA002AA803 /* MockSampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */; };
 		1BD1738F16A85FCA002AA803 /* SampleToMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -584,6 +600,18 @@
 		1B8081B416AEDF71007D919C /* cpSweep1D.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSweep1D.c; sourceTree = "<group>"; };
 		1B8081B516AEDF71007D919C /* cpVect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpVect.c; sourceTree = "<group>"; };
 		1B8081B616AEDF71007D919C /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime.h; sourceTree = "<group>"; };
+		1B80850A16AEE925007D919C /* Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
+		1B80850B16AEE925007D919C /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
+		1B80850D16AEE925007D919C /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
+		1B80850E16AEE925007D919C /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
+		1B80850F16AEE925007D919C /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
+		1B80851016AEE925007D919C /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
+		1B80851116AEE925007D919C /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
+		1B80851216AEE925007D919C /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
+		1B80851316AEE925007D919C /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
+		1B80851416AEE925007D919C /* SimpleAudioEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleAudioEngine.mm; sourceTree = "<group>"; };
+		1B80851516AEE925007D919C /* SimpleAudioEngine_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine_objc.h; sourceTree = "<group>"; };
+		1B80851616AEE925007D919C /* SimpleAudioEngine_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine_objc.m; sourceTree = "<group>"; };
 		1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MockSampleTest.cpp; path = ../Tests/MockSampleTest.cpp; sourceTree = "<group>"; };
 		1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleToMock.cpp; path = ../Tests/SampleToMock.cpp; sourceTree = "<group>"; };
 		1BD1738D16A85FCA002AA803 /* SampleToMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleToMock.h; path = ../Tests/SampleToMock.h; sourceTree = "<group>"; };
@@ -622,6 +650,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8085C216AEE99F007D919C /* AudioToolbox.framework in Frameworks */,
 				1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */,
 				1B17635E16A84698004010F6 /* libgtest.a in Frameworks */,
 				1B80806C16AE0EBC007D919C /* libgmock.a in Frameworks */,
@@ -633,6 +662,8 @@
 				1B5906A2169E152800DC668C /* libxml2.dylib in Frameworks */,
 				1B5906A3169E152800DC668C /* libz.dylib in Frameworks */,
 				1B5906A4169E152800DC668C /* QuartzCore.framework in Frameworks */,
+				1B8085CD16AEEADD007D919C /* OpenAL.framework in Frameworks */,
+				1B8085CE16AEEADD007D919C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +671,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8085CC16AEEACD007D919C /* AVFoundation.framework in Frameworks */,
+				1B8085CB16AEEAB3007D919C /* AudioToolbox.framework in Frameworks */,
+				1B8085CA16AEEA74007D919C /* OpenAL.framework in Frameworks */,
 				1B1761E616A46392004010F6 /* libcurl.a in Frameworks */,
 				79E025B8169B72C400B2E3C3 /* libcocos2dx.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -1123,12 +1157,49 @@
 			path = constraints;
 			sourceTree = "<group>";
 		};
+		1B8084F316AEE924007D919C /* CocosDenshion */ = {
+			isa = PBXGroup;
+			children = (
+				1B80850916AEE925007D919C /* include */,
+				1B80850C16AEE925007D919C /* ios */,
+			);
+			name = CocosDenshion;
+			path = ../../CocosDenshion;
+			sourceTree = "<group>";
+		};
+		1B80850916AEE925007D919C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1B80850A16AEE925007D919C /* Export.h */,
+				1B80850B16AEE925007D919C /* SimpleAudioEngine.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1B80850C16AEE925007D919C /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				1B80850D16AEE925007D919C /* CDAudioManager.h */,
+				1B80850E16AEE925007D919C /* CDAudioManager.m */,
+				1B80850F16AEE925007D919C /* CDConfig.h */,
+				1B80851016AEE925007D919C /* CDOpenALSupport.h */,
+				1B80851116AEE925007D919C /* CDOpenALSupport.m */,
+				1B80851216AEE925007D919C /* CocosDenshion.h */,
+				1B80851316AEE925007D919C /* CocosDenshion.m */,
+				1B80851416AEE925007D919C /* SimpleAudioEngine.mm */,
+				1B80851516AEE925007D919C /* SimpleAudioEngine_objc.h */,
+				1B80851616AEE925007D919C /* SimpleAudioEngine_objc.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */,
 				1B80806216AE0EAE007D919C /* gmock-ios.xcodeproj */,
 				1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */,
+				1B8084F316AEE924007D919C /* CocosDenshion */,
 				1B17613D16A46265004010F6 /* extensions */,
 				1B8080F016AEDF71007D919C /* external */,
 				BF23D4E2143315EB00657E08 /* Classes */,
@@ -1483,6 +1554,11 @@
 				1B80826716AEE122007D919C /* b2RopeJoint.cpp in Sources */,
 				1B80826816AEE122007D919C /* b2WeldJoint.cpp in Sources */,
 				1B80826916AEE122007D919C /* b2WheelJoint.cpp in Sources */,
+				1B80857816AEE926007D919C /* CDAudioManager.m in Sources */,
+				1B80857A16AEE926007D919C /* CDOpenALSupport.m in Sources */,
+				1B80857C16AEE926007D919C /* CocosDenshion.m in Sources */,
+				1B80857E16AEE926007D919C /* SimpleAudioEngine.mm in Sources */,
+				1B80858016AEE926007D919C /* SimpleAudioEngine_objc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1613,6 +1689,11 @@
 				1B80821D16AEDF72007D919C /* cpSpatialIndex.c in Sources */,
 				1B80821E16AEDF72007D919C /* cpSweep1D.c in Sources */,
 				1B80821F16AEDF72007D919C /* cpVect.c in Sources */,
+				1B80857716AEE926007D919C /* CDAudioManager.m in Sources */,
+				1B80857916AEE926007D919C /* CDOpenALSupport.m in Sources */,
+				1B80857B16AEE926007D919C /* CocosDenshion.m in Sources */,
+				1B80857D16AEE926007D919C /* SimpleAudioEngine.mm in Sources */,
+				1B80857F16AEE926007D919C /* SimpleAudioEngine_objc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1656,6 +1737,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/armle-v7\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/x86\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1703,6 +1786,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/armle-v7\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/x86\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1752,6 +1837,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/armle-v7\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/x86\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1797,6 +1884,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/armle-v7\"",
+					"\"$(SRCROOT)/../../CocosDenshion/third_party/blackberry/libraries/x86\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
