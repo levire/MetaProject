@@ -5,7 +5,7 @@ MetaProject is a starting point for multi-target (including ouya) cocos2d-x proj
 
 The project/Classes/HelloWorldScene.cpp has a little example how to use the CCOuyaController class, when deploying for OUYA.
 
-Levire encurages TDD. For this we added gtest 1.6 and Tests targets for iOS, Mac, Android and OUYA, which let you run the tests on the device. Tests has to be placed under project/Tests. A simple failing example is included.
+Levire encurages TDD. For this we added gtest 1.6, gmock 1.6 and Tests targets for iOS, Mac, Android and OUYA, which let you run the tests on the device. Tests has to be placed under project/Tests. A simple failing example is included.
 
 We will expand this template according to our work and the development of the used frameworks.
 
