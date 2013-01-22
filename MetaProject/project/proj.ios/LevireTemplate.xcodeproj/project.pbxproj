@@ -86,6 +86,7 @@
 		1B59071C169E364200DC668C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
 		1B59071D169E394200DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
 		1B59071E169E397900DC668C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ABB4B213B4395300552E6E /* main.m */; };
+		1B80806C16AE0EBC007D919C /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B80806B16AE0EAE007D919C /* libgmock.a */; };
 		1BD1738E16A85FCA002AA803 /* MockSampleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */; };
 		1BD1738F16A85FCA002AA803 /* SampleToMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -156,6 +157,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 40C84997101A36A60083642A;
 			remoteInfo = "sample1_unittest-static";
+		};
+		1B80806A16AE0EAE007D919C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B80806216AE0EAE007D919C /* gmock-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gmock-static";
 		};
 		79E025B6169B6F8B00B2E3C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -281,6 +289,7 @@
 		1B590715169E352600DC668C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Tests/AppDelegate.h; sourceTree = "<group>"; };
 		1B590717169E352600DC668C /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunnerScene.cpp; path = ../Tests/TestRunnerScene.cpp; sourceTree = "<group>"; };
 		1B590718169E352600DC668C /* TestRunnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRunnerScene.h; path = ../Tests/TestRunnerScene.h; sourceTree = "<group>"; };
+		1B80806216AE0EAE007D919C /* gmock-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "gmock-ios.xcodeproj"; path = "../../gmock/xcode/gmock-ios.xcodeproj"; sourceTree = "<group>"; };
 		1BD1738B16A85FCA002AA803 /* MockSampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MockSampleTest.cpp; path = ../Tests/MockSampleTest.cpp; sourceTree = "<group>"; };
 		1BD1738C16A85FCA002AA803 /* SampleToMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SampleToMock.cpp; path = ../Tests/SampleToMock.cpp; sourceTree = "<group>"; };
 		1BD1738D16A85FCA002AA803 /* SampleToMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleToMock.h; path = ../Tests/SampleToMock.h; sourceTree = "<group>"; };
@@ -321,6 +330,7 @@
 			files = (
 				1B590713169E2F5500DC668C /* libcocos2dx.a in Frameworks */,
 				1B17635E16A84698004010F6 /* libgtest.a in Frameworks */,
+				1B80806C16AE0EBC007D919C /* libgmock.a in Frameworks */,
 				1B1761FF16A465A6004010F6 /* libcurl.a in Frameworks */,
 				1B59069E169E152800DC668C /* Foundation.framework in Frameworks */,
 				1B59069F169E152800DC668C /* UIKit.framework in Frameworks */,
@@ -545,10 +555,19 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		1B80806316AE0EAE007D919C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B80806B16AE0EAE007D919C /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */,
+				1B80806216AE0EAE007D919C /* gmock-ios.xcodeproj */,
 				1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */,
 				1B17613D16A46265004010F6 /* extensions */,
 				BF23D4E2143315EB00657E08 /* Classes */,
@@ -695,6 +714,10 @@
 					ProjectRef = 79E025AF169B6F8A00B2E3C3 /* cocos2dx.xcodeproj */;
 				},
 				{
+					ProductGroup = 1B80806316AE0EAE007D919C /* Products */;
+					ProjectRef = 1B80806216AE0EAE007D919C /* gmock-ios.xcodeproj */;
+				},
+				{
 					ProductGroup = 1B17634516A8467A004010F6 /* Products */;
 					ProjectRef = 1B5906E7169E29CE00DC668C /* gtest-ios.xcodeproj */;
 				},
@@ -755,6 +778,13 @@
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-static";
 			remoteRef = 1B17635C16A8467A004010F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B80806B16AE0EAE007D919C /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 1B80806A16AE0EAE007D919C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		79E025B7169B6F8B00B2E3C3 /* libcocos2dx.a */ = {
@@ -907,6 +937,7 @@
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 					"\"$(SRCROOT)/../../external/chipmunk/include/chipmunk\"",
+					"\"$(SRCROOT)/../../gmock/include\"",
 					"\"$(SRCROOT)/../../gmock/gtest/include\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
@@ -952,6 +983,7 @@
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 					"\"$(SRCROOT)/../../cocos2dx/kazmath/include\"",
 					"\"$(SRCROOT)/../../external/chipmunk/include/chipmunk\"",
+					"\"$(SRCROOT)/../../gmock/include\"",
 					"\"$(SRCROOT)/../../gmock/gtest/include\"",
 					"\"$(SRCROOT)/../../cocos2dx/platform/ios\"",
 				);
