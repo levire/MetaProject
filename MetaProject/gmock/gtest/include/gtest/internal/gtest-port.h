@@ -225,7 +225,7 @@
 # else
 #  define GTEST_OS_WINDOWS_DESKTOP 1
 # endif  // _WIN32_WCE
-#elif defined __APPLE__
+#elif defined __APPLE__ && not defined __arm__
 # define GTEST_OS_MAC 1
 #elif defined __linux__
 # define GTEST_OS_LINUX 1
