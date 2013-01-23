@@ -51,9 +51,9 @@ extern "C"
     
     jobject getOuyaControllerByDeviceId(int deviceID);
     
-    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerGlobalRef);
+    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerJNI);
     
-    float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef);
+    float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerJNI);
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId);
     

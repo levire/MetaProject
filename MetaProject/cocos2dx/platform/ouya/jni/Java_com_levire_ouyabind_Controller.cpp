@@ -69,7 +69,7 @@ extern "C"
         return NULL;
     }
     
-    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerGlobalRef)
+    bool isOuyaButtonPressed(OuyaControllerButton button, jobject ouyaControllerJNI)
     {
         JniMethodInfo methodInfo;
         
@@ -80,7 +80,7 @@ extern "C"
         
         if (isMethodAvailable)
         {
-            bool buttonPressed = methodInfo.env->CallBooleanMethod(ouyaControllerGlobalRef,
+            bool buttonPressed = methodInfo.env->CallBooleanMethod(ouyaControllerJNI,
                                                                   methodInfo.methodID,
                                                                   button);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
@@ -93,7 +93,7 @@ extern "C"
         return false;
     }
     
-    float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerGlobalRef)
+    float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerJNI)
     {
         JniMethodInfo methodInfo;
         
@@ -104,7 +104,7 @@ extern "C"
         
         if (isMethodAvailable)
         {
-            float axisValue = methodInfo.env->CallFloatMethod(ouyaControllerGlobalRef,
+            float axisValue = methodInfo.env->CallFloatMethod(ouyaControllerJNI,
                                                               methodInfo.methodID,
                                                               controllerAxis);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
@@ -117,6 +117,7 @@ extern "C"
         return 0.0f;
     }
     
+    int getOuyaControllerDeviceId( )
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
