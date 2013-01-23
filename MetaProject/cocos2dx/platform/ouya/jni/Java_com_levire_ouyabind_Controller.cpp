@@ -117,7 +117,28 @@ extern "C"
         return 0.0f;
     }
     
-    int getOuyaControllerDeviceId( )
+    int getOuyaControllerDeviceId(jobject ouyaControllerJNI)
+    {
+        JniMethodInfo methodInfo;
+        
+        bool isMethodAvailable = JniHelper::getMethodInfo(methodInfo,
+                                                          "tv/ouya/console/api/OuyaController",
+                                                          "getDeviceId",
+                                                          "()I");
+        
+        if (isMethodAvailable)
+        {
+            int deviceId = methodInfo.env->CallIntMethod(ouyaControllerJNI,
+                                                            methodInfo.methodID);
+            methodInfo.env->DeleteLocalRef(methodInfo.classID);
+            return deviceId;
+        }
+        else
+        {
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getDeviceId' not available.");
+        }
+        return -1;
+    }
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId)
     {
