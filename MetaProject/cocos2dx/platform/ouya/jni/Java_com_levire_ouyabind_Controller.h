@@ -56,6 +56,8 @@ extern "C"
     float getOuyaAxisValue(OuyaControllerAxis controllerAxis, jobject ouyaControllerJNI);
 
     int getOuyaControllerDeviceId(jobject ouyaControllerJNI);
+
+    int getOuyaControllerPlayerNum(jobject ouyaControllerJNI);
     
     JNIEXPORT void JNICALL Java_com_levire_ouyabind_OuyaBindController_onNativeKeyDown(JNIEnv* env, jobject thiz, jint keyCode, jint deviceId);
     

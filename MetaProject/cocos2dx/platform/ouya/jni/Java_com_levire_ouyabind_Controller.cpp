@@ -129,13 +129,36 @@ extern "C"
         if (isMethodAvailable)
         {
             int deviceId = methodInfo.env->CallIntMethod(ouyaControllerJNI,
-                                                            methodInfo.methodID);
+                                                         methodInfo.methodID);
             methodInfo.env->DeleteLocalRef(methodInfo.classID);
             return deviceId;
         }
         else
         {
             CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getDeviceId' not available.");
+        }
+        return -1;
+    }
+
+    int getOuyaControllerPlayerNum(jobject ouyaControllerJNI)
+    {
+        JniMethodInfo methodInfo;
+        
+        bool isMethodAvailable = JniHelper::getMethodInfo(methodInfo,
+                                                          "tv/ouya/console/api/OuyaController",
+                                                          "getPlayerNum",
+                                                          "()I");
+        
+        if (isMethodAvailable)
+        {
+            int playerNum = methodInfo.env->CallIntMethod(ouyaControllerJNI,
+                                                          methodInfo.methodID);
+            methodInfo.env->DeleteLocalRef(methodInfo.classID);
+            return playerNum;
+        }
+        else
+        {
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getPlayerNum' not available.");
         }
         return -1;
     }

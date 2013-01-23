@@ -49,6 +49,7 @@ public:
 	static void freeControllerCache();
 
 	int getDeviceId();
+	int getPlayerNum();
 
 	bool isButtonPressed(OuyaControllerButton button);
 	float getAxisValue(OuyaControllerAxis axis);
