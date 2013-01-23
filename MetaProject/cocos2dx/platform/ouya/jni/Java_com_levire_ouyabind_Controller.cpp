@@ -39,7 +39,7 @@ extern "C"
 		}
         else
         {
-            CCLOG("Error Method: getControllerByPlayer not available");
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getControllerByPlayer' not available.");
         }
         return NULL;
 	}
@@ -64,7 +64,7 @@ extern "C"
 		}
         else
         {
-            CCLOG("Error Method: getControllerByDeviceId not available");
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getControllerByDeviceId' not available.");
         }
         return NULL;
     }
@@ -88,7 +88,7 @@ extern "C"
         }
         else
         {
-            CCLOG("Error Method: getButton not available");
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getButton' not available.");
         }
         return false;
     }
@@ -112,7 +112,7 @@ extern "C"
         }
         else
         {
-            CCLOG("Error Method: getOuyaAxisValue not available");
+            CCLOG("Error: Method 'tv.ouya.console.api.OuyaController.getAxisValue' not available.");
         }
         return 0.0f;
     }
@@ -144,7 +144,7 @@ extern "C"
         JNIEnv *env;
         if (JniHelper::getJavaVM()->GetEnv((void**)&env, JNI_VERSION_1_4) != JNI_OK)
         {
-            CCLOG("Error deleting global JReference");
+            CCLOG("Error: Deleting global JReference failed.");
             return false;
         }
         else
