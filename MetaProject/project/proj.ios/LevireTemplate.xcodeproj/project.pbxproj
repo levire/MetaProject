@@ -1721,7 +1721,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
 					"\"$(SRCROOT)/../../cocos2dx/include\"",
@@ -1745,7 +1745,6 @@
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
-					"-lgcov",
 				);
 				PRODUCT_NAME = LevireTemplateTests;
 				PROVISIONING_PROFILE = "";
@@ -1773,7 +1772,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/include/libxml2/\"",
 					"\"$(SRCROOT)/../../cocos2dx/include\"",
@@ -1797,7 +1796,6 @@
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
-					"-lgcov",
 				);
 				PRODUCT_NAME = LevireTemplateTests;
 				PROVISIONING_PROFILE = "";
