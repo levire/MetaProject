@@ -987,6 +987,15 @@
 				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Werror",
+					"-Wendif-labels",
+					"-Wnewline-eof",
+					"-Wno-sign-compare",
+					"-Wshadow",
+					"-Wno-unused-private-field",
+				);
 			};
 			name = Debug;
 		};
@@ -999,6 +1008,15 @@
 				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Werror",
+					"-Wendif-labels",
+					"-Wnewline-eof",
+					"-Wno-sign-compare",
+					"-Wshadow",
+					"-Wno-unused-private-field",
+				);
 			};
 			name = Release;
 		};
