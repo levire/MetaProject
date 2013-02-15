@@ -340,7 +340,7 @@
 		1B175E9D169F1F2E004010F6 /* TestRunnerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRunnerScene.cpp; sourceTree = "<group>"; };
 		1B175E9E169F1F2E004010F6 /* TestRunnerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunnerScene.h; sourceTree = "<group>"; };
 		1B175EC2169F1FA1004010F6 /* LevireTemplateTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevireTemplateTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B175EC4169F1FA2004010F6 /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LevireTemplateTests-Info.plist"; path = "/Users/kie/Projekte/MetaProject/MetaProject/project/proj.mac/LevireTemplateTests-Info.plist"; sourceTree = "<absolute>"; };
+		1B175EC4169F1FA2004010F6 /* LevireTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LevireTemplateTests-Info.plist"; sourceTree = "<group>"; };
 		1B17621F16A4677B004010F6 /* CCBAnimationManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCBAnimationManager.cpp; sourceTree = "<group>"; };
 		1B17622016A4677B004010F6 /* CCBAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBAnimationManager.h; sourceTree = "<group>"; };
 		1B17622116A4677B004010F6 /* CCBFileLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCBFileLoader.cpp; sourceTree = "<group>"; };
