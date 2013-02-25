@@ -61,7 +61,7 @@ fi
 mkdir "$APP_OUYA_ROOT"/assets
 
 # copy resources
-for file in "$APP_ROOT"/Resources/*
+for file in "$APP_OUYA_ROOT"/Resources/*
 do
 if [ -d "$file" ]; then
     cp -rf "$file" "$APP_OUYA_ROOT"/assets
@@ -87,7 +87,7 @@ if [[ "$buildexternalsfromsource" ]]; then
 else
     echo "Using prebuilt externals"
     set -x
-    "$NDK_ROOT"/ndk-build -C "$APP_OUYA_ROOT" $* \
+    "$NDK_ROOT"/ndk-build -B V=1 -C "$APP_OUYA_ROOT" $* \
         "NDK_MODULE_PATH=${ROOT}:${ROOT}/cocos2dx/platform/third_party/android/prebuilt" \
         "${BUILD_TESTS}"
 fi
